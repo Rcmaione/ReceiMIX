@@ -73,22 +73,70 @@
             <img width="25" height="25" src="https://ayltoninacio.com.br/img/s/21w50.jpg" alt="Compartilhe">
         </a>
     </div>
+    <div class="calculadora">
+        <h3>Calculadora de medidas</h3>
+        <ol>
+            <ul id="ulcalc"><p>---------------------------------</p>
+                <p>Transformar colheres de sopa em gramas</p>
+                <p>----------------------------------</p>
+                <label for="colheres">Colheres:</label>
+                <input type="number" id="colheres" placeholder="Insira a quantidade de colheres">
+                <button onclick="converterGramasEmColheres()">Converter</button>
+                <p id="resultado"></p>
+            </ul>
+            <ul id="ulcalc">
+                <p>---------------------------------</p>
+                <p>Transformar xicaras em mililitros</p>
+                <p>---------------------------------</p>
+                <label for="xicaras">Xícaras:</label>
+                <input type="number" id="xicaras" placeholder="Insira a quantidade em xícaras">
+                <button onclick="converterXicarasEmMililitros()">Converter</button>
+                <p id="resultado2"></p>
+            </ul>
+            <ul id="ulcalc">
+                <p>---------------------------------</p>
+                <p>Transformar xicaras em gramas</p>
+                <p>---------------------------------</p>
+                <label for="xicaras2">Xícaras:</label>
+                <input type="number" id="xicaras2" placeholder="Insira a quantidade em xícaras">
+                <button onclick="converterXicarasEmGramas()">Converter</button> 
+                <p id="resultado3"></p>
+            </ul>
+        </ol>
+        
+    </div>
     <div class="footer">
         <p>Copyright - <a href="#" class="link-footer">ReceiMIX</a> 2023 - Projeto para fins didáticos</p>
     </div>
     <script>
-        function share(){
-	if (navigator.share !== undefined) {
-		navigator.share({
-			title: 'ReceiMIX',
-			text: 'A sua melhor receita',
-			url: 'https://rcmaione.github.io/animar/',
-		})
-		.then(() => console.log('Successful share'))
-		.catch((error) => console.log('Error sharing', error));
-	}
-}
-    </script>
+         function share(){
+            if (navigator.share !== undefined) {
+                navigator.share({
+                    title: 'ReceiMIX',
+                    text: 'A sua melhor receita',
+                    url: 'https://rcmaione.github.io/animar/',
+                })
+                .then(() => console.log('Successful share'))
+                .catch((error) => console.log('Error sharing', error));
+            }
+        }
+        function converterGramasEmColheres() {
+            const colheres = parseFloat(document.getElementById("colheres").value);
+            const gramas = colheres*18; 
+            document.getElementById("resultado").innerHTML = `${colheres} colher(es) de sopa é aproximadamente ${gramas.toFixed(2)} gramas.`;
+        }
+        function converterXicarasEmMililitros() {
+            const xicaras = parseFloat(document.getElementById("xicaras").value);
+            const mililitros = xicaras * 240; 
 
+            document.getElementById("resultado2").innerHTML = `${xicaras} xícara(s) é aproximadamente ${mililitros.toFixed(2)} ml.`;
+        }
+        function converterXicarasEmGramas() {
+            const xicaras = parseFloat(document.getElementById("xicaras2").value);
+            const gramas = xicaras * 240;
+    
+            document.getElementById("resultado3").innerHTML = `${xicaras} xícara(s) é aproximadamente ${gramas.toFixed(2)} gramas.`;
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Dosis-ExtraBold;
+    src: url(../fonts/Dosis-ExtraBold.woff);
+}
+body{
+    background-color: #ececec;
+    overflow-x: hidden;
+}
+
+#galeria{
+    width: 90%;    
+    float: left;
+}
+#galeria-titulo{
+    width: 100%;
+    padding: 1vw 4vw;
+    font-family: Dosis-Extrabold;
+    color: #686868;
+    font-size: 1.3em;
+}
+#galeria-pets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 4vw;
+    padding-top: 0;
+    gap: 4vw;
+}
+.pet{
+    width: 350px;
+    height: 490px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #a2a2a2;
+    background-color: #f7f7f7;
+}
+.pet figure{
+    width: 350px;
+    height: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+.pet figure img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.info{
+    padding: 10px 20px;
+    font-family: Dosis-Extrabold;
+}
+.nome-pet{
+    color: #e57c3a;
+    font-size: 1.8em;
+}
+.desc-pet{
+    color: #686868;
+    line-height: 30px;
+}
+.adotar{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: coral;
+    color: #fff;
+    cursor: pointer;
+}

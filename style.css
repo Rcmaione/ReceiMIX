@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+a{
+    text-decoration: none;
+}
 #botaologin{
     font-family: 'Lato', sans-serif;
     margin-left: 42px;
@@ -179,4 +181,5 @@ ul {
     border-style: hidden;
     margin-top: 3px; 
 }
+
 

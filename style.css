@@ -2,44 +2,12 @@
     margin: 0;
     padding: 0;
 }
-#logo1{
-    width: 80px;
-    margin-left: 15px;
-    margin-top: -57px;
-}
-#login{
-    width: 50px;
-    margin-left: 35px;
-    margin-top: -27px;
-}
+
 #botaologin{
     font-family: 'Lato', sans-serif;
     margin-left: 42px;
     margin-top: -12px;
     color: white;
-}
-#compartilhe{
-    font-family: 'Lato', sans-serif;
-    margin-top: -10px;
-    margin-left: -100px;
-    color:#f95c18;
-}
-
-#central{
-    text-align: center;
-    font-weight: 700;
-    font-size: 30px;
-    color:#f0f0f0;
-}
-#inputsearch{
-    border-radius: 10px;
-    margin-left: -260px;
-    margin-top: -42px;
-}
-#search{
-    padding: 8px;
-    border-radius: 7px;
-    border-style: hidden;
 }
 #botaosearch{
     width: 20px;
@@ -48,66 +16,9 @@
     background-position: center;
     padding-left: 2px;
 }
-
-.navheader{
-    margin-top: -50px;
-    margin-left: 90%;
-    
-}
 body {
     background-color: #f0f0f0;
     font-family: 'Lato', sans-serif;
-}
-button{
-    border-radius: 3%;
-    
-}
-.header {
-    background-color: #ff6a28;
-    height: 53px;
-    padding-top: 15px;
-}
-
-.banner {
-    background-image: url(./arquivos/strogonoff.jpeg);
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-}
-
-.footer {
-    background-color: #ff6a28;
-    height: 50px;
-    color: white;
-    text-align: center;
-    padding-top: 30px;
-}
-
-.card {
-    width: 500px;
-    margin: auto;
-    padding: 33px;
-    background-color: white;
-    margin:15px auto;
-    border-radius: 5px;
-    font-weight: 300;
-}
-
-h1 {
-    text-align: center;
-    font-weight: 400;
-    font-size: 20px;
-    color: #ff6a28;
-    margin-bottom: 20px;
-}
-
-li {
-    list-style-position: inside;
-    line-height: 35px;
-}
-
-ul {
-    margin-bottom: 40px;
 }
 
 .botao {
@@ -124,18 +35,147 @@ ul {
 .botao:hover {
     background-color: #f95c18;
 }
+button{
+    margin-top: 3px;
+    border-radius: 8px;
+    padding: 5px;
+    border-style: hidden;
+    
+}
+.banner {
+    background-image: url(./arquivos/strogonoff.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.calculadora{
+    width: 200px;
+    margin-left: 770px;
+    margin-top: -100%;
+    margin-bottom:47%;
+    background-color: #ff6a28;
+    padding: 15px;
+    border-radius: 8px;
+    color: #f0f0f0;
+    
+}
+.compartilhar{
+    margin-left: 708px;
+    padding-bottom: 8px;
+}
+
+.card {
+    width: 500px;
+    margin: auto;
+    padding: 33px;
+    background-color: white;
+    margin:15px auto;
+    border-radius: 5px;
+    font-weight: 300;
+}
+
+#compartilhe{
+    font-family: 'Lato', sans-serif;
+    margin-top: -10px;
+    margin-left: -100px;
+    color:#f95c18;
+}
+
+#central{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    color:#f0f0f0;
+}
+#colheres{
+    border-radius: 8px;
+    padding: 5px;
+    border-style: hidden;  
+    margin-top: 3px; 
+}
+
+.footer {
+    background-color: #ff6a28;
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.header {
+    background-color: #ff6a28;
+    height: 53px;
+    padding-top: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ff6a28;
+    margin-bottom: 20px;
+}
+
+#inputsearch{
+    border-radius: 10px;
+    margin-left: -260px;
+    margin-top: -42px;
+}
+
+li {
+    list-style-position: inside;
+    line-height: 35px;
+}
+
+#logo1{
+    width: 80px;
+    margin-left: 15px;
+    margin-top: -57px;
+}
+
+#login{
+    width: 50px;
+    margin-left: 35px;
+    margin-top: -27px;
+}
+
+.link-footer {
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+.navheader{
+    margin-top: -50px;
+    margin-left: 90%;
+}
+#search{
+    padding: 8px;
+    border-radius: 7px;
+    border-style: hidden;
+}
 
 .titulo-receita {
     font-weight: 700;
     font-size: 30px;
     margin-top: 30px;
 }
-.compartilhar{
-    margin-left: 708px;
-    padding-bottom: 8px;
+
+ul {
+    margin-bottom: 35px;
 }
-.link-footer {
-    font-weight: 700;
-    text-decoration: none;
-    color: white;
+#ulcalc {
+    margin-bottom: 15px;
 }
+#xicaras{
+    border-radius: 8px;
+    padding: 4px;
+    border-style: hidden;
+    margin-top: 3px; 
+}
+#xicaras2{
+    border-radius: 8px;
+    padding: 4px;
+    border-style: hidden;
+    margin-top: 3px; 
+}
+

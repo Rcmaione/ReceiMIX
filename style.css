@@ -62,6 +62,24 @@ button{
     background-size: cover;
     height: 300px;
 }
+.banner3 {
+    background-image: url(./arquivos/caldo.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.banner4 {
+    background-image: url(./arquivos/farofa.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.banner5 {
+    background-image: url(./arquivos/empadinha.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
 .calculadora{
     width: 200px;
     margin-left: 79%;

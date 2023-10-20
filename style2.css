@@ -10,7 +10,12 @@ body{
     background-color: #ececec;
     overflow-x: hidden;
 }
-
+h1{
+    text-align: left;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: 150%;
+}
 #galeria{
     width: 90%;    
     float: left;
@@ -32,14 +37,14 @@ body{
 }
 .pet{
     width: 350px;
-    height: 490px;
+    height: 390px;
     border-radius: 10px;
     box-shadow: 0 0 30px #a2a2a2;
     background-color: #f7f7f7;
 }
 .pet figure{
     width: 350px;
-    height: 350px;
+    height: 220px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     overflow: hidden;
@@ -50,19 +55,29 @@ body{
     border-top-right-radius: 10px;
 
 }
+#relogio{
+    width: 15px;
+    height: 12px;
+}
 .info{
     padding: 10px 20px;
     font-family: Dosis-Extrabold;
 }
-.nome-pet{
+.nome-receita{
     color: #e57c3a;
-    font-size: 1.8em;
+    font-size: 1.3em;
 }
-.desc-pet{
+.desc-receita{
     color: #686868;
-    line-height: 30px;
+    line-height: 25px;
+    font-size: 0.8em;
+    padding: 3%;
+    margin-bottom: -5px;
 }
-.adotar{
+label{
+    font-size: 0.8em;
+}
+.acessar{
     width: 100%;
     padding: 10px;
     margin-top: 10px;

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReceiMIX - Receitas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a href="homepage.html">
+            <p id="central">ReceiMIX</p>
+        </a>
+        <a href="homepage.html">
+            <img id="logo1" src=".\arquivos\f1-removebg-preview.png">
+        </a>
+        <div class="navheader">
+            <! --COLOCAR A URL DE LOGIN-->
+            <a href="PAGINA DE LOGIN">
+                <img id="login" src=".\arquivos\login.png">
+                <p id="botaologin">login</p>
+            </a>
+            <form id="inputsearch">
+                <input type="search" id="search" value placeholder="Procure uma receita" autocomplete="off" required>
+                <input type="image" id="botaosearch" src=".\arquivos\LUPA2.png" alt="Enviar">
+            </form>
+        </div>
+
+    </div>
+
+    <div class="banner2">
+    </div>
+
+    <div class="conteudo">
+            <h1 class="titulo-receita">Moqueca tradicional</h1>
+            <div class="card">
+            <h1>INGREDIENTES</h1>
+            <ul>
+                <li>500 gramas de badejo</li>
+                <li>1 tomate</li>
+                <li>1 pimentão amarelo pequeno</li>
+                <li>1 pimentão vermelho pequeno</li>
+                <li>1 pimentão verde pequeno</li>
+                <li>Sal</li>
+                <li>Pimenta</li>
+                <li>Azeite</li>
+                <li>Coentro</li>
+                <li>½ cebola</li>
+                <li>1 dente de alho</li>
+                <li>1 vidro de leite de coco</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h1>MODO DE PREPARO</h1>
+            <ol>
+                <li>Pique o alho, a cebola e o coentro, corte o tomate em cubos e os pimentões em tiras e o badejo em cubos grandes. Tempere o peixe com sal e pimenta a gosto.</li>
+                <li>Leve uma panela ao fogo médio, despeje um fio de azeite e doure todos os pedaços do badejo. Reserve.</li>
+                <li>Na mesma panela adicione mais um fio de azeite e refogue o alho e a cebola.</li>
+                <li>Junte os pimentões e o tomate, tempere com sal e pimenta e mexa bem.</li>
+                <li>Despeje o leite de coco e misture.</li>
+                <li>Volte os pedaços de peixe para a panela e deixe cozinhar por 5 minutos.</li>
+                <li>Ajuste o sal se achar necessário e finalize com o coentro picado.</li>
+                <li>Sua moqueca de peixe tradicional está pronta! Bom apetite!</li>
+            </ol>
+            <a href="#" class="botao">Adicionar as minhas receitas</a>
+        </div>
+    </div>
+    <div class="compartilhar">
+        <p id="compartilhe">Compartilhe:</p>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://rcmaione.github.io/animar/">
+            <img width="25" height="25" src="https://ayltoninacio.com.br/img/s/18w50.jpg" alt="Compartilhe no facebook">
+        </a>
+        <a href="https://api.whatsapp.com/send?text=https://rcmaione.github.io/animar/">
+            <img width="25" height="25" src="https://ayltoninacio.com.br/img/s/20w50.jpg" alt="Compartilhe no WhatsApp">
+        </a>
+        <a href="javascript:void(0)" onclick="share()">
+            <img width="25" height="25" src="https://ayltoninacio.com.br/img/s/21w50.jpg" alt="Compartilhe">
+        </a>
+    </div>
+    <div class="calculadora">
+        <h3>Calculadora de medidas</h3>
+        <ol>
+            <ul id="ulcalc"><p>---------------------------------</p>
+                <p>Transformar colheres de sopa em gramas</p>
+                <p>----------------------------------</p>
+                <label for="colheres">Colheres:</label>
+                <input type="number" id="colheres" placeholder="Insira a quantidade de colheres">
+                <button onclick="converterGramasEmColheres()">Converter</button>
+                <p id="resultado"></p>
+            </ul>
+            <ul id="ulcalc">
+                <p>---------------------------------</p>
+                <p>Transformar xicaras em mililitros</p>
+                <p>---------------------------------</p>
+                <label for="xicaras">Xícaras:</label>
+                <input type="number" id="xicaras" placeholder="Insira a quantidade em xícaras">
+                <button onclick="converterXicarasEmMililitros()">Converter</button>
+                <p id="resultado2"></p>
+            </ul>
+            <ul id="ulcalc">
+                <p>---------------------------------</p>
+                <p>Transformar xicaras em gramas</p>
+                <p>---------------------------------</p>
+                <label for="xicaras2">Xícaras:</label>
+                <input type="number" id="xicaras2" placeholder="Insira a quantidade em xícaras">
+                <button onclick="converterXicarasEmGramas()">Converter</button> 
+                <p id="resultado3"></p>
+            </ul>
+        </ol>
+        
+    </div>
+    <div class="footer">
+        <p>Copyright - <a href="#" class="link-footer">ReceiMIX</a> 2023 - Projeto para fins didáticos</p>
+    </div>
+    <script>
+         function share(){
+            if (navigator.share !== undefined) {
+                navigator.share({
+                    title: 'ReceiMIX',
+                    text: 'A sua melhor receita',
+                    url: 'https://rcmaione.github.io/animar/',
+                })
+                .then(() => console.log('Successful share'))
+                .catch((error) => console.log('Error sharing', error));
+            }
+        }
+        function converterGramasEmColheres() {
+            const colheres = parseFloat(document.getElementById("colheres").value);
+            const gramas = colheres*18; 
+            document.getElementById("resultado").innerHTML = `${colheres} colher(es) de sopa é aproximadamente ${gramas.toFixed(2)} gramas.`;
+        }
+        function converterXicarasEmMililitros() {
+            const xicaras = parseFloat(document.getElementById("xicaras").value);
+            const mililitros = xicaras * 240; 
+
+            document.getElementById("resultado2").innerHTML = `${xicaras} xícara(s) é aproximadamente ${mililitros.toFixed(2)} ml.`;
+        }
+        function converterXicarasEmGramas() {
+            const xicaras = parseFloat(document.getElementById("xicaras2").value);
+            const gramas = xicaras * 240;
+    
+            document.getElementById("resultado3").innerHTML = `${xicaras} xícara(s) é aproximadamente ${gramas.toFixed(2)} gramas.`;
+        }
+    </script>
+</body>
+</html>

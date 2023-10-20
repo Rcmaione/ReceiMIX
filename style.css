@@ -50,6 +50,18 @@ button{
     background-size: cover;
     height: 300px;
 }
+.banner1 {
+    background-image: url(./arquivos/macarronada_de_calabresa.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.banner2 {
+    background-image: url(./arquivos/moqueca.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
 .calculadora{
     width: 200px;
     margin-left: 79%;

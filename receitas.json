@@ -1,0 +1,63 @@
+[
+    {
+        "receita": "Strogonoff de camarão",
+        "imagem": "./arquivos/strogonoff.jpeg",
+        "descricao": "Delicioso Strogonoff de camarão com arroz e batata palha.",
+        "relogio": "https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png",
+        "tempo": "40m",
+        "serve": "./arquivos/usuario.png",
+        "pessoas": "3 pessoas",
+        "link": "strogonoff.html"
+    },
+    {
+        "receita": "Macarronada de calabresa",
+        "imagem": "./arquivos/macarronada_de_calabresa.jpg",
+        "descricao": "Macarronada de calabresa com molho de tomate e manjericão.",
+        "relogio": "https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png",
+        "tempo": "30m",
+        "serve": "./arquivos/usuario.png",
+        "pessoas": "3 pessoas",
+        "link": "macarronada.html"
+    },
+    {
+        "receita": "Moqueca tradicional",
+        "imagem": "./arquivos/moqueca.jpg",
+        "descricao": "Moqueca de peixe tradicional super fácil, prática e rápida.",
+        "relogio": "https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png",
+        "tempo": "30m",
+        "serve": "./arquivos/usuario.png",
+        "pessoas": "4 pessoas",
+        "link": "moqueca.html"
+    },
+    {
+        "receita": "Caldo de Frango",
+        "imagem": "./arquivos/caldo.jpg",
+        "descricao": "Delicioso caldo de frango com batatas.",
+        "relogio": "https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png",
+        "tempo": "30m",
+        "serve": "./arquivos/usuario.png",
+        "pessoas": "6 pessoas",
+        "link": "caldo.html"
+    },
+    {
+        "receita": "Farofa de bacon",
+        "imagem": "./arquivos/farofa.jpg",
+        "descricao": "Deliciosa farofa de bacon e banana.",
+        "relogio": "https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png",
+        "tempo": "15m",
+        "serve": "./arquivos/usuario.png",
+        "pessoas": "4 pessoas",
+        "link": "farofa.html"
+    },
+    {
+        "receita": "Empadinha de palmito",
+        "imagem": "./arquivos/empadinha.jpg",
+        "descricao": "Empada de palmito com uma massa leve e amanteigada.",
+        "relogio": "https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png",
+        "tempo": "2h30m",
+        "serve": "./arquivos/usuario.png",
+        "pessoas": "6 pessoas",
+        "link": "empada.html"
+    }
+    
+]

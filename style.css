@@ -5,19 +5,7 @@
 a{
     text-decoration: none;
 }
-#botaologin{
-    font-family: 'Lato', sans-serif;
-    margin-left: 42px;
-    margin-top: -12px;
-    color: white;
-}
-#botaosearch{
-    width: 20px;
-    height: 15px;
-    background-size: cover;
-    background-position: center;
-    padding-left: 2px;
-}
+
 body {
     background-color: #f0f0f0;
     font-family: 'Lato', sans-serif;
@@ -96,7 +84,7 @@ button{
     padding-bottom: 8px;
 }
 
-.card {
+.carde {
     width: 500px;
     margin: auto;
     padding: 33px;
@@ -106,6 +94,7 @@ button{
     font-weight: 300;
 }
 
+
 #compartilhe{
     font-family: 'Lato', sans-serif;
     margin-top: -10px;
@@ -113,12 +102,7 @@ button{
     color:#f95c18;
 }
 
-#central{
-    text-align: center;
-    font-weight: 700;
-    font-size: 30px;
-    color:#f0f0f0;
-}
+
 #colheres{
     border-radius: 8px;
     padding: 5px;
@@ -135,11 +119,6 @@ button{
     margin-top: -140px;
 }
 
-.header {
-    background-color: #ff6a28;
-    height: 53px;
-    padding-top: 15px;
-}
 
 h1 {
     text-align: center;
@@ -149,42 +128,17 @@ h1 {
     margin-bottom: 20px;
 }
 
-#inputsearch{
-    border-radius: 10px;
-    margin-left: -260px;
-    margin-top: -42px;
-}
 
 li {
     list-style-position: inside;
     line-height: 35px;
 }
 
-#logo1{
-    width: 80px;
-    margin-left: 15px;
-    margin-top: -57px;
-}
-
-#login{
-    width: 50px;
-    margin-left: 35px;
-    margin-top: -27px;
-}
 
 .link-footer {
     font-weight: 700;
     text-decoration: none;
     color: white;
-}
-.navheader{
-    margin-top: -50px;
-    margin-left: 90%;
-}
-#search{
-    padding: 8px;
-    border-radius: 7px;
-    border-style: hidden;
 }
 
 .titulo-receita {

@@ -14,107 +14,91 @@
 <body>
     <div class="header">
         <p id="central">ReceiMIX</p>
-        <img id="logo1" src=".\arquivos\f1-removebg-preview.png">
+        <img id="logo1" src="./arquivos/f1-removebg-preview.png">
         <div class="navheader">
-            <! --COLOCAR A URL DE LOGIN-->
+            <!-- COLOCAR A URL DE LOGIN -->
             <a href="PAGINA DE LOGIN">
-                <img id="login" src=".\arquivos\login.png">
+                <img id="login" src="./arquivos/login.png">
                 <p id="botaologin">login</p>
             </a>
             <form id="inputsearch">
-                <input type="search" id="search" value placeholder="Procure uma receita" autocomplete="off" required>
-                <input type="image" id="botaosearch" src=".\arquivos\LUPA2.png" alt="Enviar">
+                <input type="search" id="search" placeholder="Procure uma receita" autocomplete="off" required>
+                <input type="image" id="botaosearch" src="./arquivos/LUPA2.png" alt="Enviar">
             </form>
         </div>
     </div>
-    <div class="div1">
-        <h1>Receitas Salgadas</h1>
-        <div id="galeria-pets">
-            <div class="pet">
-                <figure>
-                    <img src="./arquivos/strogonoff.jpeg" alt="foto da receita">
-                </figure>
-                <div class="info">
-                    <p class="nome-receita">Strogonoff de camarão</p>
-                    <p class="desc-receita">Delicioso Strogonoff de camarão com arroz e batata palha</p>
-                    <img id="relogio" src="https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png">
-                    <label>40m</label>
-                    <img id="relogio" src="./arquivos/usuario.png">
-                    <label>3 pessoas</label>
-                    <a href="strogonoff.html"><button class="acessar">Acessar</button></a>                        
-                </div>
-            </div>
-            <div class="pet">
-                <figure>
-                    <img src="./arquivos/macarronada_de_calabresa.jpg" alt="foto da receita">
-                </figure>
-                <div class="info">
-                    <p class="nome-receita">Macarronada de calabresa</p>
-                    <p class="desc-receita">Macarronada de calabresa com molho de tomate e manjericão</p>
-                    <img id="relogio" src="https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png">
-                    <label>30m</label>
-                    <img id="relogio" src="./arquivos/usuario.png">
-                    <label>3 pessoas</label>
-                    <a href="macarronada.html"><button class="acessar">Acessar</button></a>                        
-                </div>
-            </div>
-            <div class="pet">
-                <figure>
-                    <img src="./arquivos/moqueca.jpg" alt="foto da receita">
-                </figure>
-                <div class="info">
-                    <p class="nome-receita">Moqueca tradicional</p>
-                    <p class="desc-receita">Moqueca de peixe tradicional super fácil, prática e rápida</p>
-                    <img id="relogio" src="https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png">
-                    <label>30m</label>
-                    <img id="relogio" src="./arquivos/usuario.png">
-                    <label>4 pessoas</label>
-                    <a href="moqueca.html"><button class="acessar">Acessar</button></a>                        
-                </div>
-            </div>
-            <div class="pet">
-                <figure>
-                    <img src="./arquivos/caldo.jpg" alt="foto da receita">
-                </figure>
-                <div class="info">
-                    <p class="nome-receita">Caldo de Frango</p>
-                    <p class="desc-receita">Delicioso caldo de frango com batatas</p>
-                    <img id="relogio" src="https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png">
-                    <label>30m</label>
-                    <img id="relogio" src="./arquivos/usuario.png">
-                    <label>6 pessoas</label>
-                    <a href="caldo.html"><button class="acessar">Acessar</button></a>                        
-                </div>
-            </div>
-            <div class="pet">
-                <figure>
-                    <img src="./arquivos/farofa.jpg" alt="foto da receita">
-                </figure>
-                <div class="info">
-                    <p class="nome-receita">Farofa de bacon</p>
-                    <p class="desc-receita">Deliciosa farofa de bacon e banana</p>
-                    <img id="relogio" src="https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png">
-                    <label>15m</label>
-                    <img id="relogio" src="./arquivos/usuario.png">
-                    <label>4 pessoas</label>
-                    <a href="farofa.html"><button class="acessar">Acessar</button></a>                        
-                </div>
-            </div>
-            <div class="pet">
-                <figure>
-                    <img src="./arquivos/empadinha.jpg" alt="foto da receita">
-                </figure>
-                <div class="info">
-                    <p class="nome-receita">Empadinha de palmito</p>
-                    <p class="desc-receita">Empada de palmito com uma massa leve e amanteigada</p>
-                    <img id="relogio" src="https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png">
-                    <label>2h30m</label>
-                    <img id="relogio" src="./arquivos/usuario.png">
-                    <label>6 pessoas</label>
-                    <a href="empada.html"><button class="acessar">Acessar</button></a>                        
-                </div>
-            </div>
-        </div>
+    <h1>Receitas Salgadas</h1>
+    <div class="cont" id="receitas-totais">
+        <!-- Os cards das receitas serão adicionados aqui através do JavaScript -->
     </div>
+    
+    <script>
+        function carregar() {
+            fetch('receitas.json')
+                .then(response => response.json())
+                .then(receitas => {
+                    const conteiner = document.querySelector("#receitas-totais");
+
+                    receitas.forEach(receita => {
+                        const card = document.createElement("div");
+                        card.classList.add("card");
+
+                        const img = document.createElement("img");
+                        img.classList.add("capa");
+                        img.src = receita.imagem;
+                        img.alt = receita.receita; 
+
+                        const titulo = document.createElement("p");
+                        titulo.classList.add("nome-receita"); 
+                        titulo.textContent = receita.receita;
+
+                        const descricao = document.createElement("p"); 
+                        descricao.classList.add("desc-receita");
+                        descricao.textContent = receita.descricao;
+
+                        const relogio = document.createElement("img");
+                        relogio.classList.add("relogio"); 
+                        relogio.src = receita.relogio;
+
+                        const tempo = document.createElement("label"); 
+                        tempo.textContent = receita.tempo;
+
+                        const serve = document.createElement("img");
+                        serve.classList.add("relogio"); 
+                        serve.src = receita.serve;
+
+                        const pessoas = document.createElement("label"); 
+                        pessoas.textContent = receita.pessoas;
+
+                        const link = document.createElement("a"); 
+                        link.href = receita.link;  
+
+
+                        card.appendChild(img);
+                        card.appendChild(link);
+                        card.appendChild(titulo);
+                        card.appendChild(descricao);
+                        card.appendChild(relogio)
+                        card.appendChild(tempo); 
+                        card.appendChild(serve); 
+                        card.appendChild(pessoas); 
+
+                        link.appendChild(img);
+                        link.appendChild(titulo);
+                        link.appendChild(descricao);
+                        link.appendChild(relogio);
+                        link.appendChild(tempo);
+                        link.appendChild(serve);
+                        link.appendChild(pessoas);
+
+
+                        conteiner.appendChild(card);
+                    });
+                })
+                .catch(error => console.error('Erro ao carregar receitas:', error));
+        }
+
+        carregar();
+    </script>
 </body>
 </html>

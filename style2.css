@@ -1,14 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 @font-face {
     font-family: Dosis-ExtraBold;
     src: url(../fonts/Dosis-ExtraBold.woff);
 }
 body{
     background-color: #ececec;
-    overflow-x: hidden;
+    
+}
+#botaosearch{
+    width: 20px;
+    height: 15px;
+    background-size: cover;
+    background-position: center;
+    padding-left: 2px;
+}
+#botaologin{
+    font-family: 'Lato', sans-serif;
+    margin-top: -12px;
+    color: white;
 }
 h1{
     text-align: left;
@@ -16,74 +25,110 @@ h1{
     margin-top: 2%;
     font-size: 150%;
 }
-#galeria{
-    width: 90%;    
-    float: left;
+.header {
+    background-color: #ff6a28;
+    height: 55px;
+    padding-top: 15px;
 }
-#galeria-titulo{
-    width: 100%;
-    padding: 1vw 4vw;
+
+.info{
+    padding: 10px 20px;
     font-family: Dosis-Extrabold;
-    color: #686868;
-    font-size: 1.3em;
 }
-#galeria-pets{
+#inputsearch{
+    border-radius: 10px;
+    margin-left: -260px;
+    margin-top: -47px;
+}
+
+.navheader{
+    margin-top: -50px;
+    margin-left: 90%;
+}
+
+#login{
+    width: 50px;
+    margin-left: 24px;
+    margin-top: -24px;
+}
+label{
+    font-size: 0.8em;
+}
+#logo1{
+    width: 80px;
+    margin-left: 15px;
+    margin-top: -57px;
+}
+#search{
+    padding: 8px;
+    border-radius: 7px;
+    border-style: hidden;
+}
+#central{
+    margin-top: -4px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 33px;
+    color:#f0f0f0;
+}
+.cont{
+    
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 4vw;
-    padding-top: 0;
-    gap: 4vw;
+    justify-content: space-around;
 }
-.pet{
+
+.card {
+    margin: 10px; 
+    text-align: center;
+    box-sizing: border-box;
     width: 350px;
     height: 390px;
     border-radius: 10px;
     box-shadow: 0 0 30px #a2a2a2;
     background-color: #f7f7f7;
 }
-.pet figure{
-    width: 350px;
-    height: 220px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    overflow: hidden;
-}
-.pet figure img{
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 
+.capa{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 350px;
+    height: 219px;
 }
-#relogio{
-    width: 15px;
-    height: 12px;
+
+.card h3{
+    margin-top: 8px;
+    
 }
-.info{
-    padding: 10px 20px;
-    font-family: Dosis-Extrabold;
+p{
+    text-align: center;
 }
-.nome-receita{
+
+.nome-receita {
     color: #e57c3a;
-    font-size: 1.3em;
+    font-size: 1.6em;
+    font-family: Dosis-Extrabold;
+    text-align: center;
+    padding: 6px;
 }
-.desc-receita{
+.desc-receita {
+    text-align: justify;
     color: #686868;
     line-height: 25px;
-    font-size: 0.8em;
-    padding: 3%;
+    font-size: 1.0em;
+    padding-right: 13px;
+    padding-left: 13px;
+    padding-bottom: 13px;
     margin-bottom: -5px;
 }
-label{
-    font-size: 0.8em;
+.relogio { 
+    
+    width: 20px;
+    height: 15px;
 }
-.acessar{
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 10px;
-    border: none;
-    background-color: coral;
-    color: #fff;
-    cursor: pointer;
+label {
+    
+    color: black;
+    padding: 5px;
+    font-size: 0.9em;
 }

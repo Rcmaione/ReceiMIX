@@ -15,8 +15,9 @@ body{
     padding-left: 2px;
 }
 #botaologin{
+    margin-top: -11px;
+    text-align: center;
     font-family: 'Lato', sans-serif;
-    margin-top: -12px;
     color: white;
 }
 h1{
@@ -36,13 +37,15 @@ h1{
     font-family: Dosis-Extrabold;
 }
 #inputsearch{
+    width: 230px;
     border-radius: 10px;
     margin-left: -260px;
     margin-top: -47px;
 }
 
 .navheader{
-    margin-top: -50px;
+    width: 100px;
+    margin-top: -49px;
     margin-left: 90%;
 }
 

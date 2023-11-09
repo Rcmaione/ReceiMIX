@@ -38,7 +38,7 @@
             <input type="radio" name="radiobt" id="radio4">
 
             <div class="slide first">
-                <a href="strogonoff.html"><img src="arquivos/strogonoff.jpeg" alt="Imagem 1"></a>
+                <a href="strogonoff.html"><img src="/arquivos/strogonoff.jpeg" alt="Imagem 1"></a>
             </div>
             <div class="slide">
                 <a href="macarronada.html"><img src="arquivos/macarronada_de_calabresa.jpg" alt="Imagem 2"></a>
@@ -70,12 +70,13 @@
         <!-- Os cards das receitas serão adicionados aqui através do JavaScript -->
     </div>
     
+
     <script>
-        function carregar() {
+        function carregarReceitas() {
             fetch('receitas.json')
                 .then(response => response.json())
                 .then(receitas => {
-                    const conteiner = document.querySelector("#receitas-totais");
+                    const container = document.querySelector("#receitas-totais");
 
                     receitas.forEach(receita => {
                         const card = document.createElement("div");
@@ -111,7 +112,6 @@
                         const link = document.createElement("a"); 
                         link.href = receita.link;  
 
-
                         card.appendChild(img);
                         card.appendChild(link);
                         card.appendChild(titulo);
@@ -129,30 +129,110 @@
                         link.appendChild(serve);
                         link.appendChild(pessoas);
 
-
-                        conteiner.appendChild(card);
+                        container.appendChild(card);
                     });
                 })
                 .catch(error => console.error('Erro ao carregar receitas:', error));
         }
 
-        carregar();
+        carregarReceitas();
 
         let count = 1;
         document.getElementById("radio1").checked = true;
 
         setInterval(function(){
             nextImage();
-        },4000)
+        }, 4000);
 
         function nextImage() {
             count++;
-            if (count>4) {
+            if (count > 4) {
                 count = 1;
             }
-            document.getElementById("radio"+count).checked = true;
+            document.getElementById("radio" + count).checked = true;
         }
+
+
+
+        const content = document.querySelector(".cont");
+        const inputSearch = document.getElementById("search");
+        const searchButton = document.getElementById("botaosearch");
+
+        let items = [];
+
+        
+        
+        function handleSearch(event) {
+            if (event.type === 'input' || (event.type === 'click' && event.key === 'Enter')) {
+                content.innerHTML = "";
+                
+                items
+                .filter((item) =>
+                item.receita.toLowerCase().includes(inputSearch.value.toLowerCase())
+                )
+                .forEach((item) => addHTML(item));
+            }
+        }
+        
+        inputSearch.addEventListener('input', handleSearch);
+        searchButton.addEventListener('click', handleSearch);
+        inputSearch.addEventListener('keypress', handleSearch);
+        
+
+        function addHTML(item) {
+            const div = document.createElement("div");
+            div.classList.add("card");
+
+            const img = document.createElement("img");
+            img.classList.add("capa");
+            img.src = item.imagem;
+            img.alt = item.receita;
+
+            const titulo = document.createElement("p");
+            titulo.classList.add("nome-receita");
+            titulo.textContent = item.receita;
+
+            const descricao = document.createElement("p");
+            descricao.classList.add("desc-receita");
+            descricao.textContent = item.descricao;
+
+            const relogio = document.createElement("img");
+            relogio.classList.add("relogio");
+            relogio.src = item.relogio;
+
+            const tempo = document.createElement("label");
+            tempo.textContent = item.tempo;
+
+            const serve = document.createElement("img");
+            serve.classList.add("relogio");
+            serve.src = item.serve;
+
+            const pessoas = document.createElement("label");
+            pessoas.textContent = item.pessoas;
+
+            const link = document.createElement("a");
+            link.href = item.link;
+
+            div.appendChild(img);
+            div.appendChild(link);
+            div.appendChild(titulo);
+            div.appendChild(descricao);
+            div.appendChild(relogio);
+            div.appendChild(tempo);
+            div.appendChild(serve);
+            div.appendChild(pessoas);
+
+            content.appendChild(div);
+        }
+
+        fetch('receitas.json')
+            .then(response => response.json())
+            .then(receitas => {
+                receitas.forEach(receita => {
+                    items.push(receita);
+                });
+            })
+            .catch(error => console.error('Erro ao carregar receitas para pesquisa:', error));
     </script>
-    
 </body>
 </html>

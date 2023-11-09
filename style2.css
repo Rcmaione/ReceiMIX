@@ -15,9 +15,8 @@ body{
     padding-left: 2px;
 }
 #botaologin{
-    margin-top: -11px;
-    text-align: center;
     font-family: 'Lato', sans-serif;
+    margin-top: -12px;
     color: white;
 }
 h1{
@@ -30,6 +29,7 @@ h1{
     background-color: #ff6a28;
     height: 55px;
     padding-top: 15px;
+    display:inherit;
 }
 
 .info{
@@ -37,15 +37,13 @@ h1{
     font-family: Dosis-Extrabold;
 }
 #inputsearch{
-    width: 230px;
     border-radius: 10px;
     margin-left: -260px;
     margin-top: -47px;
 }
 
 .navheader{
-    width: 100px;
-    margin-top: -49px;
+    margin-top: -50px;
     margin-left: 90%;
 }
 
@@ -134,4 +132,100 @@ label {
     color: black;
     padding: 5px;
     font-size: 0.9em;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 700px;
+    height: 300px;
+    overflow:hidden;
+}
+
+.slides{
+    width: 404%;
+    height: 300px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 4s;
+}
+
+.slide img{
+    width: 700px;
+}
+
+.manual{
+    position: absolute;
+    width: 700px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0 ;
+}
+#radio2:checked ~ .first{
+    margin-left: -26.8% ;
+}
+#radio3:checked ~ .first{
+    margin-left: -51.7% ;
+}
+#radio4:checked ~ .first{
+    margin-left: -77% ;
+}
+
+.navigation div{
+    border: 2px solid #e57c3a;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation{
+    position: absolute;
+    width: 700px;
+    margin-top: 260px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation .bt1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation .bt2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation .bt3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation .bt4{
+    background-color: #fff;
 }

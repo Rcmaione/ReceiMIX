@@ -27,6 +27,44 @@
             </form>
         </div>
     </div>
+    <div>
+        <h1>Principais receitas</h1>  
+    </div>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radiobt" id="radio1">
+            <input type="radio" name="radiobt" id="radio2">
+            <input type="radio" name="radiobt" id="radio3">
+            <input type="radio" name="radiobt" id="radio4">
+
+            <div class="slide first">
+                <a href="strogonoff.html"><img src="/arquivos/strogonoff.jpeg" alt="Imagem 1"></a>
+            </div>
+            <div class="slide">
+                <a href="macarronada.html"><img src="arquivos/macarronada_de_calabresa.jpg" alt="Imagem 2"></a>
+            </div>
+            <div class="slide">
+                <a href="farofa.html"><img src="arquivos/farofa.jpg" alt="Imagem 3"></a>
+            </div>
+            <div class="slide">
+                <a href="empada.html"><img src="arquivos/empadinha.jpg" alt="Imagem 4"></a>
+            </div>
+           
+            <div class="navigation">
+                <div class="bt1"></div>
+                <div class="bt2"></div>
+                <div class="bt3"></div>
+                <div class="bt4"></div>
+            </div>
+        </div>
+        <div class="manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+    
     <h1>Receitas Salgadas</h1>
     <div class="cont" id="receitas-totais">
         <!-- Os cards das receitas serão adicionados aqui através do JavaScript -->
@@ -99,6 +137,22 @@
         }
 
         carregar();
+    </script>
+    <script>
+        let count = 1;
+        document.getElementById("radio1").checked = true;
+
+        setInterval(function(){
+            nextImage();
+        },4000)
+
+        function nextImage() {
+            count++;
+            if (count>4) {
+                count = 1;
+            }
+            document.getElementById("radio"+count).checked = true;
+        }
     </script>
 </body>
 </html>

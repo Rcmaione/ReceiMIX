@@ -58,6 +58,25 @@
         "serve": "./arquivos/usuario.png",
         "pessoas": "6 pessoas",
         "link": "empada.html"
+    },    {
+        "receita": "Torta de legumes",
+        "imagem": "./arquivos/torta.jpg",
+        "descricao": "Essa torta de legumes é super fácil de fazer, tem uma massa crocante e douradinha.",
+        "relogio": "https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png",
+        "tempo": "1h 30m",
+        "serve": "./arquivos/usuario.png",
+        "pessoas": "4 pessoas",
+        "link": "farofa.html"
+    },
+    {
+        "receita": "Chips de casca de batata",
+        "imagem": "./arquivos/chips.jpg",
+        "descricao": "Esse petisco é saboroso, crocante e contribui para evitar o desperdício!",
+        "relogio": "https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png",
+        "tempo": "30m",
+        "serve": "./arquivos/usuario.png",
+        "pessoas": "1 pessoa",
+        "link": "empada.html"
     }
     
 ]

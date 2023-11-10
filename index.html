@@ -13,60 +13,74 @@
     <script type="text/javascript" defer src="scripe.js"></script>
 </head>
 <body>
-    <div class="header">
-        <p id="central">ReceiMIX</p>
-        <img id="logo1" src="./arquivos/f1-removebg-preview.png">
-        <div class="navheader">
-            <!-- COLOCAR A URL DE LOGIN -->
-            <a href="PAGINA DE LOGIN">
-                <img id="login" src="./arquivos/login.png">
-                <p id="botaologin">login</p>
-            </a>
-            <form id="inputsearch">
-                <input type="search" id="search" placeholder="Procure uma receita" autocomplete="off" required>
-                <input type="image" disabled id="botaosearch" src="./arquivos/LUPA2.png" alt="Enviar">
-            </form>
-        </div>
-    </div>
-    <div class="slider">
-        <h1>Principais receitas</h1>  
-        <div class="slides">
-            <input type="radio" name="radiobt" id="radio1">
-            <input type="radio" name="radiobt" id="radio2">
-            <input type="radio" name="radiobt" id="radio3">
-            <input type="radio" name="radiobt" id="radio4">
+    <header>
+        <div class="header">
+            <p id="central">ReceiMIX</p>
+            <img id="logo1" src="./arquivos/f1-removebg-preview.png">
+            <nav>
+                <div class="navheader">
+                    <!-- COLOCAR A URL DE LOGIN -->
+                    <a href="PAGINA DE LOGIN">
+                        <img id="login" src="./arquivos/login.png">
+                        <p id="botaologin">login</p>
+                    </a>
+                    <form id="inputsearch">
+                        <input type="search" id="search" placeholder="Procure uma receita" autocomplete="off" required>
+                        <input type="image" disabled id="botaosearch" src="./arquivos/LUPA2.png" alt="Enviar">
+                    </form>
+                </div>
+            <nav>
+    </header>
+    <section>
+        <div class="slider">
+            <h1>Principais receitas</h1>  
+            <div class="slides">
+                <input type="radio" name="radiobt" id="radio1">
+                <input type="radio" name="radiobt" id="radio2">
+                <input type="radio" name="radiobt" id="radio3">
+                <input type="radio" name="radiobt" id="radio4">
 
-            <div class="slide first">
-                <a href="strogonoff.html"><img src="arquivos/strogonoff.jpeg" alt="Imagem 1"></a>
+                <div class="slide first">
+                    <a href="strogonoff.html"><img src="arquivos/strogonoff.jpeg" alt="Imagem 1"></a>
+                </div>
+                <div class="slide">
+                    <a href="macarronada.html"><img src="arquivos/macarronada_de_calabresa.jpg" alt="Imagem 2"></a>
+                </div>
+                <div class="slide">
+                    <a href="farofa.html"><img src="arquivos/farofa.jpg" alt="Imagem 3"></a>
+                </div>
+                <div class="slide">
+                    <a href="empada.html"><img src="arquivos/empadinha.jpg" alt="Imagem 4"></a>
+                </div>
+            
+                <div class="navigation">
+                    <div class="bt1"></div>
+                    <div class="bt2"></div>
+                    <div class="bt3"></div>
+                    <div class="bt4"></div>
+                </div>
             </div>
-            <div class="slide">
-                <a href="macarronada.html"><img src="arquivos/macarronada_de_calabresa.jpg" alt="Imagem 2"></a>
-            </div>
-            <div class="slide">
-                <a href="farofa.html"><img src="arquivos/farofa.jpg" alt="Imagem 3"></a>
-            </div>
-            <div class="slide">
-                <a href="empada.html"><img src="arquivos/empadinha.jpg" alt="Imagem 4"></a>
-            </div>
-           
-            <div class="navigation">
-                <div class="bt1"></div>
-                <div class="bt2"></div>
-                <div class="bt3"></div>
-                <div class="bt4"></div>
+            <div class="manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
             </div>
         </div>
-        <div class="manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
+        
+        <h1>Receitas Salgadas</h1>
+        <div class="cont" id="receitas-salgadas">
+            <!-- Os cards das receitas serão adicionados aqui através do JavaScript -->
         </div>
-    </div>
-    
-    <h1>Receitas Salgadas</h1>
-    <div class="cont" id="receitas-totais">
-        <!-- Os cards das receitas serão adicionados aqui através do JavaScript -->
-    </div>
+        <h1>Receitas Doces</h1>
+        <div class="cont" id="receitas-doces">
+            <!-- Os cards das receitas serão adicionados aqui através do JavaScript -->
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p>Copyright - <a href="#" class="link-footer">ReceiMIX</a> 2023 - Projeto para fins didáticos</p>
+        </div>
+    </footer>
 </body>
 </html>

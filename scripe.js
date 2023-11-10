@@ -1,10 +1,14 @@
 onload = function () {
-    function carregarReceitas() {
-        fetch('receitas.json')
+    let tipoSalgadas = document.querySelector("#receitas-salgadas");
+    let tipoDoces = document.querySelector("#receitas-doces");
+    let localsearchSalgadas = 'receitas.json';
+    let localsearchDoces = 'receitasdoces.json';
+    function carregarReceitas(tipo,localsearch) {
+        fetch(localsearch)
             .then(response => response.json())
             .then(receitas => {
-                const container = document.querySelector("#receitas-totais");
 
+                const container = tipo;
                 receitas.forEach(receita => {
                     const card = document.createElement("div");
                     card.classList.add("card");
@@ -60,9 +64,15 @@ onload = function () {
                 });
             })
             .catch(error => console.error('Erro ao carregar receitas:', error));
+            if (tipo === tipoSalgadas) {
+                localsearch = 'receitas.json';
+            }else{
+                localsearch = 'receitasdoces.json'
+            }
     }
 
-    carregarReceitas();
+    carregarReceitas(tipoSalgadas, 'receitas.json');
+    carregarReceitas(tipoDoces, 'receitasdoces.json');
 
     let count = 1;
     document.getElementById("radio1").checked = true;
@@ -78,7 +88,7 @@ onload = function () {
         }
         document.getElementById("radio" + count).checked = true;
     }
-
+    
     const content = document.querySelector(".cont");
     const inputSearch = document.getElementById("search");
 
@@ -86,7 +96,7 @@ onload = function () {
 
     function handleSearch(event) {
         const slide = document.getElementsByClassName("slider")[0].innerHTML = "";
-        if (event.type === 'input' || (event.type === 'click' && event.key === 'Enter')) {
+        if (event.type === 'input') {
             content.innerHTML = "";
 
             items
@@ -98,7 +108,6 @@ onload = function () {
     }
 
     inputSearch.addEventListener('input', handleSearch);
-
 
     function addHTML(item) {
 
@@ -153,16 +162,16 @@ onload = function () {
         content.appendChild(div);
 
     }
-
-    fetch('receitas.json')
-    .then(response => response.json())
-    .then(receitas => {
-        receitas.forEach(receita => {
-            items.push(receita);
-        });
-    })
-    .catch(error => console.error('Erro ao carregar receitas para pesquisa:', error));
-
-
-
+    function pesquisas(localsearch) {
+        fetch(localsearch)
+            .then(response => response.json())
+            .then(receitas => {
+                receitas.forEach(receita => {
+                    items.push(receita);
+                });
+            })
+            .catch(error => console.error('Erro ao carregar receitas para pesquisa:', error));
+    }
+    pesquisas(localsearchSalgadas);
+    pesquisas(localsearchDoces);
 }

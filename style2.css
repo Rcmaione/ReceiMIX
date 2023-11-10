@@ -20,7 +20,7 @@ body{
     color: white;
 }
 h1{
-    text-align: left;
+    text-align: center;
     margin-left: 2%;
     margin-top: 2%;
     font-size: 150%;
@@ -159,7 +159,7 @@ label {
 }
 
 .slide img{
-    width: 700px;
+    width: 100%;
 }
 
 .manual{

@@ -25,6 +25,18 @@ h1{
     margin-top: 2%;
     font-size: 150%;
 }
+.tipo-rec{
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: 150%;
+}
+.tipo-rec2{
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: 150%;
+}
 .header {
     background-color: #ff6a28;
     height: 55px;
@@ -74,7 +86,13 @@ label{
     font-size: 33px;
     color:#f0f0f0;
 }
-.cont{
+.cont1{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cont2{
     
     display: flex;
     flex-wrap: wrap;

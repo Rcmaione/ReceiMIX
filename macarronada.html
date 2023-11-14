@@ -10,10 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <div class="header">
-        <a href="homepage.html">
+        <a href="index.html">
             <p id="central">ReceiMIX</p>
         </a>
         <a href="index.html">
@@ -30,50 +31,16 @@
                 <input type="image" id="botaosearch" src=".\arquivos\LUPA2.png" alt="Enviar">
             </form>
         </div>
-
     </div>
 
-    <div class="banner1">
+    <div id="conteudo" class="conteudo">
+        <!-- Conteúdo será adicionado dinamicamente aqui -->
     </div>
 
-    <div class="conteudo">
-            <h1 class="titulo-receita">Macarronada de calabresa</h1>
-            <div class="carde">
-            <h1>INGREDIENTES</h1>
-            <ul>
-                <li>250 gramas de macarrão tipo talharim (ninho)</li>
-                <li>200 gramas de linguiça calabresa picada</li>
-                <li> ½ cebola pequena picada</li>
-                <li>2 dentes de alho picados</li>
-                <li>1 lata de tomate pelado em pedaços</li>
-                <li>1 colher de sopa de azeite de oliva</li>
-                <li>1 xícara de água</li>
-                <li>Sal e pimenta-do-reino (a gosto)</li>
-                <li>folhas frescas de manjericão (a gosto)</li>
-            </ul>
-        </div>
-        <div class="carde">
-            <h1>MODO DE PREPARO</h1>
-            <ol>
-                <li>Separe todos os ingredientes necessários para o preparo dessa receita de macarronada de calabresa.</li>
-                <li>Aqueça o azeite de oliva e refogue a calabresa picada.</li>
-                <li>Em seguida adicione a cebola e o alho picados, refogando até dourar levemente.</li>
-                <li>Adicione o tomate pelado e reduza o fogo.</li>
-                <li>Acrescente 1 xícara de água, tempere com sal e pimenta-do-reino.</li>
-                <li>Cozinhe o molho por cerca de 15 minutos ou até que ele fique mais espesso.</li>
-                <li>Desligue o fogo e adicione folhinhas frescas de manjericão. Reserve-o.</li>
-                <li>Cozinhe o macarrão em água fervente com sal, no tempo indicado na embalagem.</li>
-                <li>Escorra o macarrão quando estiver cozido.</li>
-                <li>Transfira a massa cozida para uma travessa e cubra com o molho de calabresa.</li>
-                <li>Decore com folhas de manjericão e sirva ainda quente! Todo mundo vai amar!</li>
-            </ol>
-            <a href="#" class="botao">Adicionar as minhas receitas</a>
-        </div>
-    </div>
     <div class="compartilhar">
         <p id="compartilhe">Compartilhe:</p>
         <a href="https://www.facebook.com/sharer/sharer.php?u=https://rcmaione.github.io/animar/">
-            <img width="25" height="25" src="https://ayltoninacio.com.br/img/s/18w50.jpg" alt="Compartilhe no facebook">
+            <img width="25" height="25" src="https://ayltoninacio.com.br/img/s/18w50.jpg" alt="Compartilhe no Facebook">
         </a>
         <a href="https://api.whatsapp.com/send?text=https://rcmaione.github.io/animar/">
             <img width="25" height="25" src="https://ayltoninacio.com.br/img/s/20w50.jpg" alt="Compartilhe no WhatsApp">
@@ -82,68 +49,164 @@
             <img width="25" height="25" src="https://ayltoninacio.com.br/img/s/21w50.jpg" alt="Compartilhe">
         </a>
     </div>
+
     <div class="calculadora">
         <h3>Calculadora de medidas</h3>
         <ol>
-            <ul id="ulcalc"><p>---------------------------------</p>
+            <li id="ulcalc">
+                <p>---------------------------------</p>
                 <p>Transformar colheres de sopa em gramas</p>
                 <p>----------------------------------</p>
                 <label for="colheres">Colheres:</label>
                 <input type="number" id="colheres" placeholder="Insira a quantidade de colheres">
                 <button onclick="converterGramasEmColheres()">Converter</button>
                 <p id="resultado"></p>
-            </ul>
-            <ul id="ulcalc">
+            </li>
+            <li id="ulcalc">
                 <p>---------------------------------</p>
-                <p>Transformar xicaras em mililitros</p>
+                <p>Transformar xícaras em mililitros</p>
                 <p>---------------------------------</p>
                 <label for="xicaras">Xícaras:</label>
                 <input type="number" id="xicaras" placeholder="Insira a quantidade em xícaras">
                 <button onclick="converterXicarasEmMililitros()">Converter</button>
                 <p id="resultado2"></p>
-            </ul>
-            <ul id="ulcalc">
+            </li>
+            <li id="ulcalc">
                 <p>---------------------------------</p>
-                <p>Transformar xicaras em gramas</p>
+                <p>Transformar xícaras em gramas</p>
                 <p>---------------------------------</p>
                 <label for="xicaras2">Xícaras:</label>
                 <input type="number" id="xicaras2" placeholder="Insira a quantidade em xícaras">
                 <button onclick="converterXicarasEmGramas()">Converter</button> 
                 <p id="resultado3"></p>
-            </ul>
+            </li>
         </ol>
-        
     </div>
+
     <div class="footer">
         <p>Copyright - <a href="#" class="link-footer">ReceiMIX</a> 2023 - Projeto para fins didáticos</p>
     </div>
+
     <script>
-         function share(){
+        document.addEventListener('DOMContentLoaded', function () {
+            const container = document.querySelector("#conteudo");
+
+            function carregarReceitas() {
+                fetch('receitas_individuais.json')
+                    .then(response => response.json())
+                    .then(receitas => exibirReceitas(receitas))
+                    .catch(error => console.error('Erro ao carregar receitas:', error));
+            }
+
+            function exibirReceitas(receitas) {
+                receitas.forEach(receita => {
+                    const card = criarCardReceita(receita);
+                    container.appendChild(card);
+                });
+            }
+
+            function criarCardReceita(receita) {
+                const card = document.createElement("div");
+                card.classList.add("conteudo");
+
+                const tituloReceita = document.createElement("h1");
+                tituloReceita.classList.add("titulo-receita");
+                tituloReceita.textContent = receita.titulo;
+
+                const cardIngredientes = criarCardIngredientes(receita.ingredientes);
+                const cardModoPreparo = criarCardModoPreparo(receita.modoPreparo);
+
+                card.appendChild(tituloReceita);
+                card.appendChild(cardIngredientes);
+                card.appendChild(cardModoPreparo);
+
+                return card;
+            }
+
+            function criarCardIngredientes(ingredientes) {
+                const card = document.createElement("div");
+                card.classList.add("carde");
+
+                const img = document.createElement("img");
+                img.classList.add("capa");
+                img.src = ingredientes.imagem;
+                
+
+                card.classList.add("carde");
+                const tituloIngredientes = document.createElement("h1");
+                tituloIngredientes.textContent = "INGREDIENTES";
+
+                const listaIngredientes = document.createElement("ul");
+                ingredientes.forEach(ingrediente => {
+                    const item = document.createElement("li");
+                    item.textContent = ingrediente;
+                    listaIngredientes.appendChild(item);
+                });
+                card.append(img);
+                card.appendChild(tituloIngredientes);
+                card.appendChild(listaIngredientes);
+
+                return card;
+            }
+
+            function criarCardModoPreparo(modoPreparo) {
+                const card = document.createElement("div");
+                card.classList.add("carde");
+
+                const tituloModoPreparo = document.createElement("h1");
+                tituloModoPreparo.textContent = "MODO DE PREPARO";
+
+                const listaModoPreparo = document.createElement("ol");
+                modoPreparo.forEach(passo => {
+                    const item = document.createElement("li");
+                    item.textContent = passo;
+                    listaModoPreparo.appendChild(item);
+                });
+
+                const botaoAdicionar = document.createElement("a");
+                botaoAdicionar.href = "#";
+                botaoAdicionar.classList.add("botao");
+                botaoAdicionar.textContent = "Adicionar às minhas receitas";
+
+                card.appendChild(tituloModoPreparo);
+                card.appendChild(listaModoPreparo);
+                card.appendChild(botaoAdicionar);
+
+                return card;
+            }
+
+            carregarReceitas();
+        });
+
+        function share() {
             if (navigator.share !== undefined) {
                 navigator.share({
                     title: 'ReceiMIX',
                     text: 'A sua melhor receita',
                     url: 'https://rcmaione.github.io/animar/',
                 })
-                .then(() => console.log('Successful share'))
-                .catch((error) => console.log('Error sharing', error));
+                    .then(() => console.log('Successful share'))
+                    .catch((error) => console.log('Error sharing', error));
             }
         }
+
         function converterGramasEmColheres() {
             const colheres = parseFloat(document.getElementById("colheres").value);
-            const gramas = colheres*18; 
+            const gramas = colheres * 18;
             document.getElementById("resultado").innerHTML = `${colheres} colher(es) de sopa é aproximadamente ${gramas.toFixed(2)} gramas.`;
         }
+
         function converterXicarasEmMililitros() {
             const xicaras = parseFloat(document.getElementById("xicaras").value);
-            const mililitros = xicaras * 240; 
+            const mililitros = xicaras * 240;
 
             document.getElementById("resultado2").innerHTML = `${xicaras} xícara(s) é aproximadamente ${mililitros.toFixed(2)} ml.`;
         }
+
         function converterXicarasEmGramas() {
             const xicaras = parseFloat(document.getElementById("xicaras2").value);
             const gramas = xicaras * 240;
-    
+
             document.getElementById("resultado3").innerHTML = `${xicaras} xícara(s) é aproximadamente ${gramas.toFixed(2)} gramas.`;
         }
     </script>

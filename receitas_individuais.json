@@ -1,0 +1,30 @@
+[
+    {
+        "titulo": "Macarronada de calabresa",
+        "imagem": "./arquivos/macarronada_de_calabresa.jpg",
+        "ingredientes": [
+            "250 gramas de macarrão tipo talharim (ninho)",
+            "500 gramas de linguiça calabresa picada",
+            "½ cebola pequena picada",
+            "2 dentes de alho picados",
+            "1 lata de tomate pelado em pedaços",
+            "1 colher de sopa de azeite de oliva",
+            "1 xícara de água",
+            "Sal e pimenta-do-reino (a gosto)",
+            "folhas frescas de manjericão (a gosto)"
+        ],
+        "modoPreparo": [
+            "Separe todos os ingredientes necessários para o preparo dessa receita de macarronada de calabresa.",
+            "Aqueça o azeite de oliva e refogue a calabresa picada.",
+            "Em seguida, adicione a cebola e o alho picados, refogando até dourar levemente.",
+            "Adicione o tomate pelado e reduza o fogo.",
+            "Acrescente 1 xícara de água, tempere com sal e pimenta-do-reino.",
+            "Cozinhe o molho por cerca de 15 minutos ou até que ele fique mais espesso.",
+            "Desligue o fogo e adicione folhinhas frescas de manjericão. Reserve-o.",
+            "Cozinhe o macarrão em água fervente com sal, no tempo indicado na embalagem.",
+            "Escorra o macarrão quando estiver cozido.",
+            "Transfira a massa cozida para uma travessa e cubra com o molho de calabresa.",
+            "Decore com folhas de manjericão e sirva ainda quente! Todo mundo vai amar!"
+        ]
+    }
+]

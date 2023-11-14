@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="stylelogin.css">
+    <title>Login | ReceiMIX</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container cadastre" action="/cadastrar" method="POST">
+            <form>
+                <h1>Criar conta</h1>
+
+                <span>Use seu email para registrar-se</span>
+                <input type="email" placeholder="Email" id="cad-user" required>
+                <input type="password" placeholder="Senha" id="cad-senha" required>
+                <input type="submit" value="Cadastrar" id="botao1" onclick="cadastrar();">
+            </form>
+        </div>
+        <div class="form-container entre">
+            <form>
+                <h1>Entrar</h1>
+                <span>Use seu email e senha</span>
+                <input type="email" placeholder="Email" id="usuario">
+                <input type="password" placeholder="Senha" id="senha">
+                <a href="#">Esqueceu sua senha?</a>
+                <input type="submit" value="Entre" id="botao" onclick="logar(); return false">
+            </form>
+        </div>
+        <div class="slide-container">
+            <div class="slide">
+                <div class="slide-panel slide-left">
+                    <h1>Bem Vindo!!</h1>
+                    <p>Insira seus dados pessoais para usar todos os recursos do site</p>
+                    <button class="hidden" id="login">Já possuo conta</button>
+                </div>
+                <div class="slide-panel slide-right">
+                    <h1>Olá, Cozinheiro(a)!</h1>
+                    <p>Registre-se com seus dados para usar todos os recursos do site</p>
+                    <button class="hidden" id="registrar">Não possuo conta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

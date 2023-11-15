@@ -1,7 +1,7 @@
 const container = document.getElementById('container');
 const registerBtn = document.getElementById('registrar');
 const loginBtn = document.getElementById('login');
-
+document.cookie = "userLoggedIn=false; expires=false, 18 Dec 2023 12:00:00 UTC; path=/";
 registerBtn.addEventListener('click', () => {
     container.classList.add("active");
 });
@@ -14,13 +14,13 @@ function logar() {
     var login = document.getElementById('usuario').value;
     var senhaElement = document.getElementById('senha');
     var senha = senhaElement.value;
-
     let cadastros = JSON.parse(localStorage.getItem('cadastros'));
 
     let usuario = cadastros.find(cadastro => cadastro.email === login && cadastro.senha === senha);
 
     if (usuario) {
         location.href = "index.html";
+        document.cookie = "userLoggedIn=true; expires=Thu, 18 Dec 2023 12:00:00 UTC; path=/";
     } else {
         alert("Senha inválida");
         senhaElement.style.backgroundColor = 'red';

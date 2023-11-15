@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script type="text/javascript" defer src="scripe.js"></script>
 </head>
 <body>
     <div class="header">
@@ -19,17 +20,21 @@
         <a href="index.html">
             <img id="logo1" src=".\arquivos\f1-removebg-preview.png">
         </a>
-        <div class="navheader">
-            <! --COLOCAR A URL DE LOGIN-->
-            <a href="PAGINA DE LOGIN">
-                <img id="login" src=".\arquivos\login.png">
-                <p id="botaologin">login</p>
-            </a>
+        <nav>
+            <div id="minhasreceitas">
+                <!--Vai ser colocado aqui as minhas receitas-->
+            </div>
+            <div id="remover">
+                <a href="login.html">
+                    <img id="login" src="./arquivos/login.png">
+                    <p id="botaologin">login</p>
+                </a>
+            </div>
             <form id="inputsearch">
-                <input type="search" id="search" value placeholder="Procure uma receita" autocomplete="off" required>
-                <input type="image" id="botaosearch" src=".\arquivos\LUPA2.png" alt="Enviar">
+                <input type="search" id="search" placeholder="Procure uma receita" autocomplete="off" required>
+                <input type="image" disabled id="botaosearch" src="./arquivos/LUPA2.png" alt="Enviar">
             </form>
-        </div>
+    <nav>
 
     </div>
 

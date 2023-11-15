@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ReceiMIX - Receitas</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <script type="text/javascript" defer src="scripeMinhasreceitas.js"></script>
+        
+    </head>
+<body>
+    <header>
+        <div class="header">
+            <p id="central">ReceiMIX</p>
+            <img id="logo1" src="./arquivos/f1-removebg-preview.png">
+            <form id="inputsearch">
+                <input type="search" id="search" placeholder="Procure uma receita" autocomplete="off" required>
+                <input type="image" disabled id="botaosearch" src="./arquivos/LUPA2.png" alt="Enviar">
+            </form>
+            <nav>
+                <div id="minhasreceitas">
+                    <!--Vai ser colocado aqui as minhas receitas-->
+                </div>
+                <div id="remover">
+                    <a href="login.html">
+                        <img id="login" src="./arquivos/login.png">
+                        <p id="botaologin">login</p>
+                    </a>
+                </div>
+            <nav>
+    </header>
+    <section>
+        <h1>Minhas Receitas</h1>
+        <div id="minhas-receitas-container">
+            <!-- Aqui serão adicionadas as receitas curtidas -->
+        </div>
+        
+        <div class="cont1" id="receitas-salgadas">
+            <!-- Os cards das receitas serão adicionados aqui através do JavaScript -->
+        </div>
+        <div class="cont2" id="receitas-doces">
+            <!-- Os cards das receitas serão adicionados aqui através do JavaScript -->
+        </div>
+    <footer>
+        <div class="footer">
+            <p>Copyright - <a href="#" class="link-footer">ReceiMIX</a> 2023 - Projeto para fins didáticos</p>
+        </div>
+    </footer>
+</body>
+</html>

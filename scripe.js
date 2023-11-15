@@ -23,40 +23,49 @@ window.onload = function () {
     function criarCardReceita(receita) {
         const card = document.createElement("div");
         card.classList.add("card");
-
+    
         const link = document.createElement("a");
         link.href = receita.link;
-
+    
         const img = document.createElement("img");
         img.classList.add("capa");
         img.src = receita.imagem;
         img.alt = receita.receita;
-
+    
         const titulo = document.createElement("p");
         titulo.classList.add("nome-receita");
         titulo.textContent = receita.receita;
-
+    
         const descricao = document.createElement("p");
         descricao.classList.add("desc-receita");
         descricao.textContent = receita.descricao;
-
+    
         const relogio = document.createElement("img");
         relogio.classList.add("relogio");
         relogio.src = receita.relogio;
-
+    
         const tempo = document.createElement("label");
         tempo.textContent = receita.tempo;
-
+    
         const serve = document.createElement("img");
         serve.classList.add("relogio");
         serve.src = receita.serve;
-
+    
         const pessoas = document.createElement("label");
         pessoas.textContent = receita.pessoas;
-
-        link.append(img, titulo, descricao, relogio, tempo, serve, pessoas);
+    
+        const botao = document.createElement("button");
+        botao.id = "CREATEBOTAO"; // Altere "CREATEBOTAO" para o ID desejado
+        botao.textContent = "Curtir"; // Adicione o texto desejado ao botão
+    
+        // Adicione um evento de clique para chamar a função curtirReceita
+        botao.addEventListener("click", function () {
+            curtirReceita(receita.receita);
+        });
+    
+        link.append(img, titulo, descricao, relogio, tempo, serve, pessoas, botao);
         card.appendChild(link);
-
+    
         return card;
     }
 
@@ -82,16 +91,17 @@ window.onload = function () {
     const h1 = document.querySelector(".tipo-rec");
     const h1_1 = document.querySelector(".tipo-rec2");
     const items = [];
+
     function handleSearch(event) {
         const slide = document.querySelector(".slider");
-    
+
         if (event.type === 'input') {
             content.innerHTML = "";
             content2.innerHTML = "";
             h1.innerHTML = "";
             h1_1.innerHTML = "";
             slide.innerHTML = "";
-    
+
             if (!inputSearch || inputSearch.value.trim() === '') {
                 window.location.reload();
             } else {
@@ -150,7 +160,6 @@ window.onload = function () {
             .then(receitas => {
                 receitas.forEach(receita => {
                     items.push(receita);
-                    
                 });
             })
             .catch(error => console.error('Erro ao carregar receitas para pesquisa:', error));
@@ -158,11 +167,63 @@ window.onload = function () {
 
     buscarReceitas(tipoSalgadas);
     buscarReceitas(tipoDoces);
-    
 
     inputSearch.addEventListener('input', handleSearch);
-    
+
     window.onunload = function () {
         clearInterval(intervalId);
     }
-};
+
+    // Verificar se o cookie de autenticação existe
+    const logado = document.cookie.includes("userLoggedIn=true");
+
+    if (logado) {
+        const minhasReceitasLink = document.createElement('a');
+        minhasReceitasLink.href = 'MinhasReceitas.html';
+
+        const minhasReceitasText = document.createElement('p');
+        minhasReceitasText.id = 'botaominhasreceitas';
+        minhasReceitasText.textContent = 'Minhas Receitas';
+
+        minhasReceitasLink.appendChild(minhasReceitasText);
+
+        // Criar o elemento de "Sair"
+        const sair = document.createElement('p');
+        sair.id = 'botaosair';
+        sair.textContent = 'Sair';
+
+        // Adicionar um evento de clique para remover o cookie e redirecionar para a página de login
+        sair.addEventListener('click', function () {
+            document.cookie = "userLoggedIn=false; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+            window.location.href = 'index.html'; // Redirecionar para a página de login
+        });
+
+        // Adicionar os elementos ao header
+        const navheader = document.querySelector('#minhasreceitas');
+        navheader.appendChild(minhasReceitasLink);
+        navheader.appendChild(sair);
+
+        // Remover elemento com ID "remover"
+        const elementoARemover = document.getElementById("remover");
+        if (elementoARemover) {
+            elementoARemover.remove();
+        }
+    }
+    const MINHAS_RECEITAS_KEY = 'MinhasReceitas';
+
+    function curtirReceita(nomeReceita) {
+        const receitasCurtidas = JSON.parse(localStorage.getItem(MINHAS_RECEITAS_KEY)) || [];
+
+        if (!receitasCurtidas.includes(nomeReceita)) {
+            receitasCurtidas.push(nomeReceita);
+            localStorage.setItem(MINHAS_RECEITAS_KEY, JSON.stringify(receitasCurtidas));
+            alert('Receita curtida!');
+
+            // Adiciona a lógica adicional aqui, se necessário
+            // Você pode redirecionar para a página Minhas Receitas ou atualizar dinamicamente a lista de receitas curtidas na página
+        } else {
+            alert('Você já curtiu esta receita!');
+        }
+    }
+
+}

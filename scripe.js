@@ -115,42 +115,43 @@ window.onload = function () {
     function addHTML(item) {
         const div = document.createElement("div");
         div.classList.add("card");
-
+    
         const img = document.createElement("img");
         img.classList.add("capa");
         img.src = item.imagem;
         img.alt = item.receita;
-
+    
         const titulo = document.createElement("p");
         titulo.classList.add("nome-receita");
         titulo.textContent = item.receita;
-
+    
         const descricao = document.createElement("p");
         descricao.classList.add("desc-receita");
         descricao.textContent = item.descricao;
-
+    
         const relogio = document.createElement("img");
         relogio.classList.add("relogio");
         relogio.src = item.relogio;
-
+    
         const tempo = document.createElement("label");
         tempo.textContent = item.tempo;
-
+    
         const serve = document.createElement("img");
         serve.classList.add("relogio");
         serve.src = item.serve;
-
+    
         const pessoas = document.createElement("label");
         pessoas.textContent = item.pessoas;
-
-        const link = document.createElement("a");
-        link.href = item.link;
-
+    
+        const link = document.createElement("a"); 
+        link.addEventListener("click", function () {
+            ViewexibirReceita(item.link);
+        });
+    
         link.append(img, titulo, descricao, relogio, tempo, serve, pessoas);
         div.appendChild(link);
         content.appendChild(div);
     }
-
     function buscarReceitas(tipo) {
         const localURL = tipo === tipoSalgadas ? 'receitas.json' : 'receitasdoces.json';
         fetch(localURL)

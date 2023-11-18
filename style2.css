@@ -7,13 +7,7 @@ body {
     background-color: #ececec;
 }
 
-#botaosearch {
-    width: 20px;
-    height: 15px;
-    background-size: cover;
-    background-position: center;
-    padding-left: 2px;
-}
+
 #botaocalc{
     width: 85px;
     height: 35px;
@@ -118,7 +112,12 @@ label {
 #search {
     padding: 8px;
     border-radius: 7px;
-    border-style: hidden;
+    border: none; /* Em vez de border-style: hidden; */
+    background-image: url('./arquivos/LUPA2.png');
+    background-size: 20px; /* Ajuste o tamanho conforme necessário */
+    background-position: 95% center; /* Ajuste a posição conforme necessário */
+    background-repeat: no-repeat;
+    padding-right: 30px; /* Adicione espaço à direita para a imagem não sobrepor o texto */
 }
 
 #central {

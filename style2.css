@@ -20,8 +20,11 @@ body {
 
 #botaologin {
     font-family: 'Lato', sans-serif;
-    margin-top: -12px;
     color: white;
+    display: flex;
+    position: absolute;
+    top: 45px;
+    padding-left: 8px;
 }
 #minhasreceitas{
     left: 88%;
@@ -95,8 +98,8 @@ h1 {
 
 #login {
     width: 50px;
-    margin-left: -10px;
-    margin-top: -24px;
+    position: absolute;
+    top: 1px;
 }
 
 label {

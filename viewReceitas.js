@@ -18,6 +18,7 @@ async function ViewexibirReceita(nome) {
     await buscaReceita(nome);
     viewaddcompartilhar(corpo)
     viewaddComplementos(corpo);
+
 }
 
 function buscaReceita(nome) {

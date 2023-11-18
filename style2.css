@@ -30,20 +30,23 @@ body {
     color: white;
 }
 #minhasreceitas{
-    margin-top: -45px;
-    display: flex;
-    margin-left: -60px;
+    left: 55em;
+    display: flex;   
     align-items: center;
     flex-wrap: wrap;
+    position: absolute;
+    display: flex;
+    top: 0.5em;
 }
 #botaosair {
     width: 0%;
     color: rgb(255, 230, 0);
     font-size: 1.1em;
     font-weight: 700;
-    left: 95%;
-    top: 19px;
+    left: 4.5em;
+    top: 0.7em;
     position: absolute;
+    display: flex;
 }
 
 #botaominhasreceitas {

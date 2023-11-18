@@ -30,14 +30,15 @@ body {
     color: white;
 }
 #minhasreceitas{
-    left: 55em;
-    display: flex;   
+    left: 88%;
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
     position: absolute;
     display: flex;
     top: 0.5em;
 }
+
 #botaosair {
     width: 0%;
     color: rgb(255, 230, 0);

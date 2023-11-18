@@ -1,5 +1,32 @@
 [
     {
+        "nome": "strogonoff",
+        "titulo": "Strogonoff de camarão",
+        "imagem": "./arquivos/strogonoff.jpeg",
+        "ingredientes": [
+            "500 gramas de camarão cinza ou rosa",
+            "1 colher de sobremesa rasa de margarina",
+            "1 cebola picada",
+            "2 dentes de alho picado",
+            "1 pitada orégano",
+            "1 pitada de sal",
+            "Pimenta-do-reino a gosto",
+            "1 xícara de molho de tomate",
+            "1 colher de sopa de mostarda",
+            "1 lata de creme de leite sem soro"
+        ],
+        "modoPreparo": [
+            "Retire a cabeça e as cascas do camarão, limpe e reserve.",
+            "Em uma panela, coloque 1 colher de sobremesa de manteiga e deixe derreter.",
+            "Em seguida, adicione 1 cebola picada e 2 dentes de alho picado. Refogue.",
+            "Depois, coloque os camarões e adicione 1 pitada de orégano, 1 pitada de sal e pimenta-do-reino a gosto. Misture.",
+            "Acrescente 1 xícara de molho de tomate, 1 colher de sopa de mostarda e misture novamente.",
+            "Desligue o fogo, adicione 1 lata de creme de leite sem soro e misture.",
+            "Sirva em seguida."
+        ]
+    },
+    {
+        "nome": "macarronada",
         "titulo": "Macarronada de calabresa",
         "imagem": "./arquivos/macarronada_de_calabresa.jpg",
         "ingredientes": [
@@ -26,5 +53,358 @@
             "Transfira a massa cozida para uma travessa e cubra com o molho de calabresa.",
             "Decore com folhas de manjericão e sirva ainda quente! Todo mundo vai amar!"
         ]
+    }, {
+        "nome": "moqueca",
+        "titulo": "Moqueca tradicional",
+        "imagem": "./arquivos/moqueca.jpg",
+        "ingredientes": [
+            "500 gramas de badejo",
+            "1 tomate",
+            "1 pimentão amarelo pequeno",
+            "1 pimentão vermelho pequeno",
+            "1 pimentão verde pequeno",
+            "Sal",
+            "Pimenta",
+            "Azeite",
+            "Coentro",
+            "½ cebola",
+            "1 dente de alho",
+            "1 vidro de leite de coco"
+        ],
+        "modoPreparo": [
+            "Pique o alho, a cebola e o coentro, corte o tomate em cubos e os pimentões em tiras e o badejo em cubos grandes. Tempere o peixe com sal e pimenta a gosto.",
+            "Leve uma panela ao fogo médio, despeje um fio de azeite e doure todos os pedaços do badejo. Reserve.",
+            "Na mesma panela adicione mais um fio de azeite e refogue o alho e a cebola.",
+            "Junte os pimentões e o tomate, tempere com sal e pimenta e mexa bem.",
+            "Despeje o leite de coco e misture.",
+            "Volte os pedaços de peixe para a panela e deixe cozinhar por 5 minutos.",
+            "Ajuste o sal se achar necessário e finalize com o coentro picado.",
+            "Sua moqueca de peixe tradicional está pronta! Bom apetite!"
+        ]
+    },
+    {
+        "nome": "caldo",
+        "titulo": "Caldo de Frango",
+        "imagem": "./arquivos/caldo.jpg",
+        "ingredientes": [
+            "3 batatas médias (cerca de 700 gramas)",
+            "250 gramas de frango cozido e desfiado",
+            "2 dentes de alho picados",
+            "½ cebola picada",
+            "½ tomate picado (sem sementes)",
+            "600 mililitros de caldo de frango ou água",
+            "2 colheres de sopa de azeite de oliva",
+            "Sal e pimenta-do-reino (a gosto)",
+            "Salsinha picada (a gosto)",
+            "Raspas de gengibre (opcional e a gosto)"
+        ],
+        "modoPreparo": [
+            "Estamos sugerindo que cozinhe as batatas no caldo do cozimento do frango, mas se isso não for possível, cozinhe-as com água, sal e açafrão.",
+            "Descasque e corte as batatas em rodelas médias para facilitar e agilizar o cozimento.",
+            "Cozinhe as batatas com o caldo de frango ou água numa panela de pressão, numa quantidade que cubra as batatas. A partir do momento que iniciar a pressão, conte 7 minutos e em seguida desligue o fogo.",
+            "Em seguida, bata as batatas com o caldo do cozimento no liquidificador até formar um líquido cremoso e homogêneo.",
+            "Numa panela média, aqueça o azeite de oliva e refogue a cebola e o alho rapidamente. Junte o frango cozido e desfiado ao refogado.",
+            "Adicione o tomate picado e refogue por alguns minutos, mexendo de vez em quando.",
+            "Junte o creme de batatas ao refogado e tempere com sal e pimenta-do-reino.",
+            "Deixe o caldo cozinhar em fogo baixo por cerca de 5 a 7 minutos, mexendo de vez em quando. Desligue o fogo e adicione salsinha picada, misturando em seguida.",
+            "Seu caldo de frango com batatas está pronto para ser servido!"
+        ]
+    },
+    {
+        "nome": "farofa",
+        "titulo": "Farofa de bacon",
+        "imagem": "./arquivos/farofa.jpg",
+        "ingredientes": [
+            "2 unidades de banana prata picadas em rodelas",
+            "100 gramas de bacon",
+            "1 xícara de farinha de mandioca",
+            "2 colheres de sopa de manteiga ou margarina",
+            "Cebola",
+            "1 punhado de cebolinha e salsinha"
+        ],
+        "modoPreparo": [
+            "Comece separando todos os ingredientes da farofa de banana com bacon, esse passo é extremamente importante para os iniciantes na cozinha, pois permitirá que você não esqueça de adicionar nenhum ingrediente à receita. Corte a banana em rodelas, e o bacon e a cebola em quadradinhos pequenos, para ficar mais fácil de fritar.",
+            "Comece fritando o bacon na própria gordura. Como o bacon já tem bastante gordura, utilize um pouco da manteiga para agregar sabor.",
+            "Com o bacon ainda fritando, acrescente a cebola picadinha. Deixe ela murchar e ficar transparente, vai dar sabor a farofa. Mexa bem o preparo para ficarem bem homogêneo.",
+            "Com o bacon e a cebola já fritos, retire da panela e reserve. Usando a mesma panela, acrescente o restante da manteiga e as bananas picadas e deixe fritar alguns minutos. Com as bananas já fritas, acrescente novamente o bacon e a farinha de mandioca. Misture bem e por último acrescente a cebolinha e a salsinha e acerte o sal.",
+            "A sua farofa de banana com bacon está pronta agora é só servir"
+        ]
+    },
+    {
+        "nome": "empada",
+        "titulo": "Empadinha de palmito",
+        "imagem": "./arquivos/empadinha.jpg",
+        "ingredientes": [
+            "200 gramas de farinha de trigo",
+            "100 gramas de maionese",
+            "Sal a gosto",
+            "½ cebola",
+            "2 dentes de alho",
+            "Azeite",
+            "1 tomate",
+            "1 colher de sopa de extrato de tomate",
+            "200 gramas de creme de leite",
+            "Pimenta"
+        ],
+        "modoPreparo": [
+            "Primeiro vamos preparar a massa, então separe todos os ingredientes para a massa da sua empadinha de palmito: farinha de trigo, maionese e sal.",
+            "Em uma tigela coloque a farinha de trigo e junte a maionese aos poucos. Misture até formar uma massa que dê para modelar.",
+            "Sove rapidamente só até ficar uma massa bem uniforme e depois embrulhe em plástico filme e deixe descansar por 30 minutos.",
+            "Enquanto isso vamos preparar o recheio: pique o alho e a cebola, corte o tomate em cubos e o palmito em rodelas.",
+            "Leve uma panela ao fogo médio, despeje um fio de azeite e refogue o alho e a cebola.",
+            "Junte o tomate e o palmito e mexa bem por alguns minutos.",
+            "Junte o extrato de tomate e finalize com o creme de leite. Acerte o sal e a pimenta e deixe esfriar.",
+            "Agora é hora de montar a nossa empadinha de palmito: pegue um pedaço da massa e abra nas forminhas de empada ou de cupcake.",
+            "Coloque o recheio já frio.",
+            "Pegue um pedacinho da massa, abra e cubra a forminha, juntando as bordas.",
+            "Leve para assar em forno preaquecido a 180°C por cerca de 40 minutos ou até dourar bem! Sua empadinha de palmito está pronta!"
+        ]
+    },
+    {
+        "nome": "torta",
+        "titulo": "Torta de legumes",
+        "imagem": "./arquivos/torta.jpg",
+        "ingredientes": [
+            "1 Couve-flor.",
+            "2 Cenouras.",
+            "1 Nabos.",
+            "Cebolinha.",
+            "1 Colher de sopa de aveia em flocos.",
+            "Sal e pimenta do reino a gosto.",
+            "Água para cobrir.",
+            "1 Xícara de batata cozida e amassada.",
+            "1 Xícara de farinha de trigo.",
+            "1 Pitada de sal.",
+            "1 Xícara de manteiga em temperatura ambiente.",
+            "1 Colher de chá de fermento químico para bolo.",
+            "1 Xícara de água para dar a liga.",
+            "Farinha para polvilhar a bancada."
+        ],
+        "modoPreparo": [
+            "Separe os ingredientes para fazer o recheio da sua torta de legumes.",            "Em uma tigela coloque a farinha de trigo e junte a maionese aos poucos. Misture até formar uma massa que dê para modelar.",
+            "Comece cortando todos os vegetais do formato que quiser. O ideal é cortar em pedaços pequenos, pois os vegetais não serão triturados, entrarão inteiros no recheio da torta. Em uma panela grande, coloque azeite e quando esquentar, coloque os vegetais para dar uma dourada.",            "Enquanto isso vamos preparar o recheio: pique o alho e a cebola, corte o tomate em cubos e o palmito em rodelas.",
+            "Depois que os vegetais estiverem dourados, cubra com água, deixando cerca de 1 dedo acima dos vegetais. Adicione também a cebolinha picada e a aveia em flocos. Deixe cozinhar em fogo médio até que os vegetais estejam macios e o caldo tenha reduzido e engrossado.",            "Junte o tomate e o palmito e mexa bem por alguns minutos.",
+            "Enquanto os vegetais cozinham, aproveite para fazer a massa da torta. Em uma tigela, coloque a batata, a farinha, o sal, o fermento e a manteiga.",            "Agora é hora de montar a nossa empadinha de palmito: pegue um pedaço da massa e abra nas forminhas de empada ou de cupcake.",
+            "Adicione a água aos poucos, para não passar do ponto, até obter uma massa lisa e que não grude nas mãos.",            "Pegue um pedacinho da massa, abra e cubra a forminha, juntando as bordas.",
+            "Quando os vegetais estiverem prontos, coloque-os no fundo da travessa ou pirex onde irá assar a torta e deixe que esfriem antes de colocar a massa por cima.", 
+            "Abra a massa com um rolo. A maneira mais fácil para evitar que grude e que quebre na hora de transferir para a assadeira é abrir entre duas folhas de papel manteiga polvilhadas com farinha. Na hora de transferir, basta virar o papel sobre o recheio e puxar o papel manteiga. Faça cortes na massa com uma faca para facilitar a saída de vapor quando estiver assando no forno.",
+            "Sua torta de legumes fácil está pronta para ser servida. Antes de cortar, espere esfriar um pouco para o recheio firmar."       ]
+    },
+    {
+        "nome": "chips",
+        "titulo": "Chips de casca de batata",
+        "imagem": "./arquivos/chips.jpg",
+        "ingredientes": [
+            "Cascas de 2 batatas inglesas médias.",
+            "1 Colher de sopa de azeite de oliva.",
+            "Sal (a gosto).",
+            "Páprica picante (a gosto e opcional)"
+        ],
+        "modoPreparo": [
+            "Separe os ingredientes necessários para preparar esse delicioso chips de casca de batata.",            "Em uma tigela coloque a farinha de trigo e junte a maionese aos poucos. Misture até formar uma massa que dê para modelar.",
+            "Comece lavando bem as cascas da batata e em seguida, deixe-as um pouco na água por uns 10 minutos.",            "Enquanto isso vamos preparar o recheio: pique o alho e a cebola, corte o tomate em cubos e o palmito em rodelas.",
+            "Após esse tempo, seque bem as batatas com o auxílio de papel toalha ou de um pano limpo.",            "Junte o tomate e o palmito e mexa bem por alguns minutos.",
+            "Num bowl, tempere as cascas de batata com azeite de oliva, sal e páprica.",            "Agora é hora de montar a nossa empadinha de palmito: pegue um pedaço da massa e abra nas forminhas de empada ou de cupcake.",
+            "Numa assadeira, distribua as cascas de batata, sem sobrepô-las. Leve para assar em forno preaquecido a 200 graus por aproximadamente 20 minutos.",
+            "Na metade do tempo, vire o lado da casca e deixe novamente no forno até que fique sequinho e levemente dourado.", 
+            "Prontinho! Agora você já sabe como preparar chips de cascas de batata no forno!"   
+            ]
+    },
+    {
+        "nome": "pudim",
+        "titulo": "Pudim de pão",
+        "imagem": "./arquivos/pudim.jpg",
+        "ingredientes": [
+            "1 pão francês amanhecido",
+            "1 ovo",
+            "250 mililitros de leite integral",
+            "6 colheres de sopa de açúcar",
+            "½ xícara de açúcar (80 gramas)"
+        ],
+        "modoPreparo": [
+            "Coloque todos os ingredientes da massa do pudim no liquidificador e bata bem até formar uma mistura homogênea.",
+            "Deixe a massa descansando e prepare a calda do pudim: coloque a forma no fogo baixo e acrescente o açúcar. Mexa com cuidado até formar uma calda caramelo.",
+            "Despeje a massa do pudim de pão delicadamente na forma com o caramelo e leve para assar em banho-maria a 180 graus por 1h30 - ou faça o teste do palito para ter certeza de que seu pudim está pronto.",
+            "Depois de assar, seu pudim de pão à moda antiga está pronto! Agora é só levar à geladeira por, pelo menos, 1 hora e se deliciar com essa receita clássica cheia de memória afetiva."
+            ]
+    },
+    {
+        "nome": "mousse",
+        "titulo": "Mousse de maracujá com chocolate",
+        "imagem": "./arquivos/mousse.jpg",
+        "ingredientes": [
+            "1 caixa de creme de leite",
+            "1 lata de leite condensado",
+            "Suco de maracujá concentrado e sem açúcar",
+            "1 envelope de gelatina incolor e sem sabor",
+            "Chocolate em gotas ou picado",
+            "2 xícaras de creme de leite fresco",
+            "¼ xícara de cacau em pó"
+        ],
+        "modoPreparo": [
+            "Começamos pela mousse de maracujá: bata bem no liquidificador o creme de leite, o leite condensado, o suco de maracujá e a gelatina sem sabor preparada de acordo com as instruções da embalagem.",
+            "Despeje em um refratário e leve à geladeira até firmar.",
+            "Agora prepare a ganache: leve uma panela com o creme de leite ao fogo médio e a que surgirem as primeiras bolhas de fervura desligue o fogo. Despeje o creme de leite sobre o chocolate picado e misture até derreter.",
+            "Junte o cacau passando pela peneira e mexa bem.",
+            "Cubra com papel filme e leve para a geladeira por no mínimo 3 horas e depois bata na batedeira até chegar na textura de ganache desejada.",
+            "Monte em seguida a sua Mousse de maracujá colocando ganache de chocolate por cima. Você pode se desejar finalizar com cacau em pó ou chocolate granulado!"
+            ]
+    },
+    {
+        "nome": "pudim",
+        "titulo": "Pudim de pão",
+        "imagem": "./arquivos/pudim.jpg",
+        "ingredientes": [
+            "1 pão francês amanhecido",
+            "1 ovo",
+            "250 mililitros de leite integral",
+            "6 colheres de sopa de açúcar",
+            "½ xícara de açúcar (80 gramas)"
+        ],
+        "modoPreparo": [
+            "Coloque todos os ingredientes da massa do pudim no liquidificador e bata bem até formar uma mistura homogênea.",
+            "Deixe a massa descansando e prepare a calda do pudim: coloque a forma no fogo baixo e acrescente o açúcar. Mexa com cuidado até formar uma calda caramelo.",
+            "Despeje a massa do pudim de pão delicadamente na forma com o caramelo e leve para assar em banho-maria a 180 graus por 1h30 - ou faça o teste do palito para ter certeza de que seu pudim está pronto.",
+            "Depois de assar, seu pudim de pão à moda antiga está pronto! Agora é só levar à geladeira por, pelo menos, 1 hora e se deliciar com essa receita clássica cheia de memória afetiva."
+            ]
+    },
+    {
+        "nome": "cocada",
+        "titulo": "Cocada de leite condensado",
+        "imagem": "./arquivos/cocada.jpg",
+        "ingredientes": [
+            "1 lata de leite condensado",
+            "100 gramas de coco seco ralado fresco ou industrializado",
+            "1 caixa de creme de leite",
+            "200 mililitros de leite de coco",
+            "1 colher de sopa de manteiga"
+        ],
+        "modoPreparo": [
+            "Numa panela, junte o leite condensado, o creme de leite, o leite de coco e a manteiga.",
+            "Adicione o coco ralado e misture bem antes de ligar o fogo.",
+            "Ligue o fogo baixo e cozinhe a cocada, mexendo sem parar até que esta fique mais encorpada e querendo se soltar levemente do fundo da panela. Este processo poderá levar cerca de 10 minutos, aproximadamente.",
+            "Assim que estiver pronta, transfira a cocada mole para um refratário e espere esfriar, para levar para a geladeira em seguida.",
+            "Pronto! Sua cocada de leite condensado mole está pronta para ser servida como sobremesa gelada ou até mesmo poderá ser usada como recheio de bolo!"
+            ]
+    },
+    {
+        "nome": "cupcake",
+        "titulo": "Cupcake de banana com aveia",
+        "imagem": "./arquivos/cupcake.jpg",
+        "ingredientes": [
+            "2 bananas bem maduras (prata ou nanica)",
+            "2 ovos",
+            "3 colheres de sopa de açúcar mascavo",
+            "1 colher de chá de canela em pó (opcional)",
+            "1 xícara de farinha de aveia ou aveia em flocos",
+            "1 colher de sopa de fermento em pó químico",
+            "2 colheres de sopa de óleo de girassol ou de milho",
+            "rodelas de banana (para decorar)"
+        ],
+        "modoPreparo": [
+            "Pré-aqueça o forno a 180°C e prepare as forminhas para cupcakes.",
+            "No liquidificador, adicione os ovos, o óleo, o açúcar mascavo, as bananas e a canela em pó. Bata rapidamente.",
+            "Acrescente a farinha de aveia e bata novamente.",
+            "Adicione o fermento em pó por último e use a tecla pulsar ou bata rapidamente.",
+            "Distribua a massa nas forminhas para cupcakes, preenchendo até 3/4 de cada forminha.",
+            "Decore os cupcakes com rodelas de banana e polvilhe canela em pó.",
+            "Leve ao forno pré-aquecido por aproximadamente 30 minutos, ou até dourarem na superfície e passarem no teste do palito.",
+            "Seus cupcakes de banana com aveia estão prontos para serem saboreados!"
+            ]
+    },
+    {
+        "nome": "bolo",
+        "titulo": "Receita de Bolo de chocolate",
+        "imagem": "./arquivos/bolo.jpg",
+        "ingredientes": [
+            "4 ovos",
+            "1/2 xícara de óleo (120 mililitros)",
+            "1 xícara de leite morno",
+            "1 xícara de açúcar (160 gramas)",
+            "1/2 xícara de chocolate em pó",
+            "1 1/2 xícaras de farinha de trigo peneirada",
+            "1/2 colher de chá de café solúvel (opcional)",
+            "1 colher de sopa de fermento em pó químico",
+            "1 caixa de creme de leite",
+            "3 colheres de sopa de chocolate em pó ou achocolatado",
+            "1 colher de sopa de açúcar"
+        ],
+        "modoPreparo": [
+            "Num bowl, misture os ovos, o óleo, o leite e o açúcar.",
+            "Adicione o chocolate em pó e o café solúvel, misturando até ficar homogêneo.",
+            "Acrescente a farinha de trigo peneirada e misture novamente.",
+            "Por último, adicione o fermento em pó e misture delicadamente com um fouet.",
+            "Transfira a massa para uma forma média untada e enfarinhada com chocolate em pó e leve para assar em forno pré-aquecido a 180 graus por aproximadamente 35 minutos ou até passar pelo teste do palito.",
+            "Retire o bolo do forno e espere esfriar para desenformar. Enquanto isso, prepare a cobertura.",
+            "Para a cobertura, junte o creme de leite, o chocolate em pó e o açúcar, misturando tudo numa panela, antes de ligar o fogo.",
+            "Cozinhe em fogo baixo por 5 a 7 minutos, sem parar de mexer, até o creme engrossar levemente.",
+            "Pronto! Agora é só decorar o bolo com essa cobertura cremosa e servir essa delícia!"
+        ]       
+    },
+    {
+        "nome": "canjica",
+        "titulo": "Canjica branca",
+        "imagem": "./arquivos/canjica.jpg",
+        "ingredientes": [
+            "750 mililitros de Leite de coco",
+            "1 xícara de Canjica branca",
+            "Água",
+            "1 xícara de açúcar",
+            "1 xícara de Coco ralado grosso",
+            "1 pitada de Canela (opcional)"
+
+        ],
+        "modoPreparo": [
+            "Coloque a canjica de molho em água por um dia ou pelo menos 6 horas.",
+            "Separe todos os ingredientes necessários para a receita.",
+            "Na panela de pressão, coloque a canjica e água. Feche a panela e cozinhe por 40 minutos após pegar pressão.",
+            "Verifique se a canjica está cozida. Se ainda estiver dura, adicione mais água, feche a panela e cozinhe por mais 10 minutos.",
+            "Após o cozimento da canjica, adicione o açúcar, o leite de coco e o coco ralado.",
+            "Deixe cozinhar para encorpar e permeie o sabor. Ajuste a cremosidade de acordo com sua preferência.",
+            "Transfira para uma panela normal, se necessário, para verificar a cremosidade.",
+            "Sirva com uma pitada de canela ou amendoim. Aproveite!"
+        ] 
+    },
+    {
+        "nome": "milk",
+        "titulo": "Milkshake de nutella",
+        "imagem": "./arquivos/milkshake.jpg",
+        "ingredientes": [
+            "2 bolas de sorvete de flocos",
+            "½ xícara de leite (120 mililitros)",
+            "4 colheres de sopa de Nutella",
+            "2 colheres de sopa de Nutella",
+            "1 xícara de chantilly batido"
+
+        ],
+        "modoPreparo": [
+            "Passe as 2 colheres de sopa de Nutella na borda e dentro do copo.",
+            "Em um liquidificador ou processador, coloque as bolas de sorvete, o leite e as 4 colheres de sopa de Nutella e bata bem.",
+            "Coloque o milkshake no copo.",
+            "Finalize com o chantilly.",
+            "Aqui eu finalizei com canudinhos de chocolate, você pode colocar canudinho de doce de leite também.",
+            "Aproveite o seu delicioso Milkshake de Nutella!"
+        ] 
+    },
+    {
+        "nome": "suco",
+        "titulo": "Suco de manga com laranja",
+        "imagem": "./arquivos/suco.jpg",
+        "ingredientes": [
+            "1 manga",
+            "1 laranja",
+            "150 mililitros de leite",
+            "20 gramas de açúcar (opcional)"
+        ],
+        "modoPreparo": [
+            "Descasque e pique a manga.",
+            "Coloque metade do leite e bata no liquidificador ou mixer.",
+            "Esprema a laranja e adicione o suco extraído à mistura.",
+            "Adicione o açúcar e o leite restante.",
+            "Misture bem para obter o suco de manga com laranja.",
+            "Se estiver muito grosso, adicione mais leite ou água para ajustar a consistência.",
+            "Sirva e desfrute deste delicioso suco natural, rico em vitamina C e perfeito para começar o dia com energia."
+        ] 
     }
+      
 ]

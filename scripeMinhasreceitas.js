@@ -41,7 +41,40 @@ window.onload = function () {
             alert('Você já curtiu esta receita!');
         }
     }
+    const logado = document.cookie.includes("userLoggedIn=true");
 
+    if (logado) {
+        const minhasReceitasLink = document.createElement('a');
+        minhasReceitasLink.href = 'MinhasReceitas.html';
+
+        const minhasReceitasText = document.createElement('p');
+        minhasReceitasText.id = 'botaominhasreceitas';
+        minhasReceitasText.textContent = 'Minhas Receitas';
+
+        minhasReceitasLink.appendChild(minhasReceitasText);
+
+        // Criar o elemento de "Sair"
+        const sair = document.createElement('p');
+        sair.id = 'botaosair';
+        sair.textContent = 'Sair';
+
+        // Adicionar um evento de clique para remover o cookie e redirecionar para a página de login
+        sair.addEventListener('click', function () {
+            document.cookie = "userLoggedIn=false; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+            window.location.href = 'index.html'; // Redirecionar para a página de login
+        });
+
+        // Adicionar os elementos ao header
+        const navheader = document.querySelector('#minhasreceitas');
+        navheader.appendChild(minhasReceitasLink);
+        navheader.appendChild(sair);
+
+        // Remover elemento com ID "remover"
+        const elementoARemover = document.getElementById("remover");
+        if (elementoARemover) {
+            elementoARemover.remove();
+        }
+    }
     function exibirMinhasReceitas() {
         minhasReceitasContainer.innerHTML = ""; // Limpa o conteúdo atual
     

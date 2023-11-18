@@ -14,15 +14,6 @@ body {
     background-position: center;
     padding-left: 2px;
 }
-#botaocalc{
-    width: 85px;
-    height: 35px;
-    margin-top: 3px;
-    border-radius: 8px;
-    padding: 5px;
-    border-style: hidden;
-    color: #ff6a28;
-}
 
 #botaologin {
     font-family: 'Lato', sans-serif;
@@ -30,12 +21,12 @@ body {
     color: white;
 }
 #minhasreceitas{
-    margin-top: -45px;
+    margin-top: 5px;
     margin-left: -60px;
 }
 #botaosair {
     width: 0%;
-    margin-top: -57px;
+    margin-top: -46px;
     margin-left: 96.5%;
     color: rgb(255, 230, 0);
     font-size: 1.1em;
@@ -68,7 +59,7 @@ h1 {
 
 .header {
     background-color: #ff6a28;
-    height: 70px;
+    height: 55px;
     padding-top: 15px;
     display: inherit;
 }
@@ -82,7 +73,7 @@ h1 {
     width: 220px;
     border-radius: 10px;
     margin-left: 66%;
-    margin-top: -87px;
+    margin-top: -55px;
 }
 
 #remover {
@@ -104,7 +95,8 @@ label {
 #logo1 {
     width: 80px;
     margin-left: 15px;
-    margin-top: -117px;
+    margin-top: -90px;
+    display: flex;
 }
 
 #search {
@@ -141,7 +133,7 @@ p {
     text-align: center;
     box-sizing: border-box;
     width: 350px;
-    height: 360px;
+    height: 320px;
     border-radius: 10px;
     box-shadow: 0 0 30px #a2a2a2;
     background-color: #f7f7f7;
@@ -155,7 +147,6 @@ p {
     height: 219px;
 }
 .capa-mr{
-    margin-left: -6px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 350px;
@@ -211,112 +202,13 @@ label {
     font-size: 1.0em;
 }
 
-.slider {
-    margin: 0 auto;
-    width: 70%;
-    height: 30%;
-    overflow: hidden;
-}
 
-.slides {
-    width: 400%;
-    height: 300px;
-    display: flex;
-}
-
-.slides input {
-    display: none;
-}
-
-.slide {
-    width: 25%;
-    position: relative;
-    transition: 4s;
-}
-
-.slide img {
-    width: 100%;
-}
-
-.manual {
-    position: absolute;
-    width: 70%;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 2px solid #fff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
-
-.manual-btn:hover {
-    background-color: #fff;
-}
-
-#radio1:checked ~ .first {
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-    margin-left: -26.8%;
-}
-
-#radio3:checked ~ .first {
-    margin-left: -51.7%;
-}
-
-#radio4:checked ~ .first {
-    margin-left: -77%;
-}
-
-.navigation div {
-    border: 2px solid #e57c3a;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation {
-    position: absolute;
-    width: 70%;
-    margin-top: 260px;
-    display: flex;
-    justify-content: center;
-}
-
-.navigation div:not(:last-child) {
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation .bt1 {
-    background-color: #fff;
-}
-
-#radio2:checked ~ .navigation .bt2 {
-    background-color: #fff;
-}
-
-#radio3:checked ~ .navigation .bt3 {
-    background-color: #fff;
-}
-
-#radio4:checked ~ .navigation .bt4 {
-    background-color: #fff;
-}
-
+  
 
 @media only screen and (max-width: 768px) {
+    /* Estilos específicos para telas menores que 768px */
  
+
     .slider,
     .manual,
     .navigation {

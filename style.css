@@ -1,8 +1,13 @@
-* {
+body {
     margin: 0;
     padding: 0;
 }
-a{
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
     text-decoration: none;
 }
 
@@ -25,99 +30,101 @@ body {
 .botao:hover {
     background-color: #f95c18;
 }
-button{
+
+#CREATEBOTAO {
     margin-top: 3px;
     border-radius: 8px;
     padding: 5px;
     border-style: hidden;
-    
 }
-.banner {
-    background-image: url(./arquivos/strogonoff.jpeg);
+
+#data-receita-imagem {
     background-position: center;
     background-size: cover;
     height: 300px;
+    width: 100%;
 }
-.banner1 {
-    background-image: url(./arquivos/macarronada_de_calabresa.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 300px;
+
+#data-receita-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.banner2 {
-    background-image: url(./arquivos/moqueca.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-}
-.banner3 {
-    background-image: url(./arquivos/caldo.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-}
-.banner4 {
-    background-image: url(./arquivos/farofa.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-}
-.banner5 {
-    background-image: url(./arquivos/empadinha.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-}
-.calculadora{
-    width: 200px;
-    margin-left: 79%;
-    margin-top: -78%;
-    margin-bottom:47%;
+
+.calculadora {
+    text-align: center;
+    width: 100%;
     background-color: #ff6a28;
     padding: 15px;
     border-radius: 8px;
     color: #f0f0f0;
-    
-}
-.compartilhar{
-    margin-left: 65%;
-    padding-bottom: 8px;
+    display: inline-block;
 }
 
-.carde {
+.fixed-element {
+    width: 23%;
+    background-color: #f0f0f0;
+    padding: 0px;
+    margin-left: 2%;
+    margin-bottom: 18%;
+    display: flex;
+    margin-top: -952px;
+}
+
+
+.compartilhar {
+    margin-top: -17px;
+    padding-bottom: 8px;
+    right: 20%;
+    position: absolute;
+}
+
+#data-receita-modoPreparo,
+#data-receita-ingredientes {
     width: 500px;
     margin: auto;
     padding: 33px;
     background-color: white;
-    margin:15px auto;
+    margin: 15px auto;
     border-radius: 5px;
     font-weight: 300;
 }
 
-
-#compartilhe{
-    font-family: 'Lato', sans-serif;
-    margin-top: -10px;
-    margin-left: -22%;
-    color:#f95c18;
+dl,
+ol,
+ul {
+    margin-left: -28px;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
+#compartilhe {
+    font-family: 'Lato', sans-serif;
+    margin-top: 1px;
+    margin-left: -105%;
+    color: #f95c18;
+    
+}
 
-#colheres{
+#colheres {
     border-radius: 8px;
     padding: 5px;
-    border-style: hidden;  
-    margin-top: 3px; 
+    border-style: hidden;
+    margin-top: 3px;
 }
 
-.footer {
+footer {
     background-color: #ff6a28;
     height: 50px;
     color: white;
     text-align: center;
     padding-top: 30px;
+
 }
 
+#footernames {
+    margin-top: -1.8%;
+}
 
 h1 {
     text-align: center;
@@ -127,12 +134,10 @@ h1 {
     margin-bottom: 20px;
 }
 
-
 li {
     list-style-position: inside;
     line-height: 35px;
 }
-
 
 .link-footer {
     font-weight: 700;
@@ -149,20 +154,30 @@ li {
 ul {
     margin-bottom: 35px;
 }
+
 #ulcalc {
     margin-bottom: 15px;
 }
-#xicaras{
+
+#xicaras {
     border-radius: 8px;
     padding: 4px;
     border-style: hidden;
-    margin-top: 3px; 
+    margin-top: 3px;
 }
-#xicaras2{
+
+#xicaras2 {
     border-radius: 8px;
     padding: 4px;
     border-style: hidden;
-    margin-top: 3px; 
+    margin-top: 3px;
 }
 
-
+@media screen and (max-width: 600px) {
+    .calculadora,
+    .fixed-element {
+        width: 100%; /* Faz ambos ocuparem 100% da largura na tela pequena */
+        display: block; /* Certifique-se de que eles são exibidos como blocos */
+        margin-left: 0; /* Remove a margem à esquerda */
+    }
+}

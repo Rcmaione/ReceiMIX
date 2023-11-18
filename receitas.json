@@ -7,7 +7,7 @@
         "tempo": "40m",
         "serve": "./arquivos/usuario.png",
         "pessoas": "3 pessoas",
-        "link": "strogonoff.html"
+        "link": "strogonoff"
     },
     {
         "receita": "Macarronada de calabresa",
@@ -17,7 +17,7 @@
         "tempo": "30m",
         "serve": "./arquivos/usuario.png",
         "pessoas": "3 pessoas",
-        "link": "macarronada.html"
+        "link": "macarronada"
     },
     {
         "receita": "Moqueca tradicional",
@@ -27,27 +27,27 @@
         "tempo": "30m",
         "serve": "./arquivos/usuario.png",
         "pessoas": "4 pessoas",
-        "link": "moqueca.html"
+        "link": "moqueca"
     },
     {
         "receita": "Caldo de Frango",
         "imagem": "./arquivos/caldo.jpg",
-        "descricao": "Delicioso caldo de frango com batatas.",
+        "descricao": "Delicioso caldo de frango com batatas, perfeito para tomar em um dia frio.",
         "relogio": "https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png",
         "tempo": "30m",
         "serve": "./arquivos/usuario.png",
         "pessoas": "6 pessoas",
-        "link": "caldo.html"
+        "link": "caldo"
     },
     {
         "receita": "Farofa de bacon",
         "imagem": "./arquivos/farofa.jpg",
-        "descricao": "Deliciosa farofa de bacon e banana.",
+        "descricao": "Deliciosa farofa, crocante de bacon, banana e cebolinha.",
         "relogio": "https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png",
         "tempo": "15m",
         "serve": "./arquivos/usuario.png",
         "pessoas": "4 pessoas",
-        "link": "farofa.html"
+        "link": "farofa"
     },
     {
         "receita": "Empadinha de palmito",
@@ -57,7 +57,7 @@
         "tempo": "2h30m",
         "serve": "./arquivos/usuario.png",
         "pessoas": "6 pessoas",
-        "link": "empada.html"
+        "link": "empada"
     },    {
         "receita": "Torta de legumes",
         "imagem": "./arquivos/torta.jpg",
@@ -66,7 +66,7 @@
         "tempo": "1h 30m",
         "serve": "./arquivos/usuario.png",
         "pessoas": "4 pessoas",
-        "link": "farofa.html"
+        "link": "torta"
     },
     {
         "receita": "Chips de casca de batata",
@@ -76,7 +76,7 @@
         "tempo": "30m",
         "serve": "./arquivos/usuario.png",
         "pessoas": "1 pessoa",
-        "link": "empada.html"
+        "link": "chips"
     }
     
 ]

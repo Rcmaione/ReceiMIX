@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReceiMIX - Receitas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script type="text/javascript" defer src="viewReceitas.js"></script>
     <script type="text/javascript" defer src="scripe.js"></script>
 
 </head>
@@ -34,7 +36,7 @@
                 </div>
             <nav>
     </header>
-    <section>
+    <section id="receitasView">
         <div class="slider">
             <h1>Principais receitas</h1>  
             <div class="slides">
@@ -71,18 +73,19 @@
             </div>
         </div>
         
-        <h1 class="tipo-rec">Receitas Salgadas</h1>
-        <div class="cont1" id="receitas-salgadas">
-            <!-- Os cards das receitas serão adicionados aqui através do JavaScript -->
-        </div>
-        <h1 class="tipo-rec2">Receitas Doces</h1>
-        <div class="cont2" id="receitas-doces">
-            <!-- Os cards das receitas serão adicionados aqui através do JavaScript -->
-        </div>
+            <h1 class="tipo-rec">Receitas Salgadas</h1>
+            <div class="cont1" id="receitas-salgadas">
+                <!-- Os cards das receitas serão adicionados aqui através do JavaScript -->
+            </div>
+            <h1 class="tipo-rec2">Receitas Doces</h1>
+            <div class="cont2" id="receitas-doces">
+                <!-- Os cards das receitas serão adicionados aqui através do JavaScript -->
+            </div>
+        
     </section>
     <footer>
         <div class="footer">
-            <p>Copyright - <a href="#" class="link-footer">ReceiMIX</a> 2023 - Projeto para fins didáticos</p>
+            <p id="footernames">Copyright<sup>&copy</sup> - <a href="#" class="link-footer">ReceiMIX</a> 2023 - Projeto para fins didáticos</p>
         </div>
     </footer>
 </body>

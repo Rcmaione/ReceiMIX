@@ -7,17 +7,17 @@
         "tempo": "2h 30m",
         "serve": "./arquivos/usuario.png",
         "pessoas": "4 pessoas",
-        "link": "strogonoff.html"
+        "link": "pudim"
     },
     {
-        "receita": "Mousse de maracujá com ganache de chocolate",
+        "receita": "Mousse de maracujá com chocolate",
         "imagem": "./arquivos/mousse.jpg",
         "descricao": "Sobremesa equilibrada e deliciosa que vai encantar a todos.",
         "relogio": "https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png",
         "tempo": "4h",
         "serve": "./arquivos/usuario.png",
         "pessoas": "4 pessoas",
-        "link": "strogonoff.html"
+        "link": "mousse"
     },
     {
         "receita": "Cocada de leite condensado",
@@ -27,27 +27,27 @@
         "tempo": "30m",
         "serve": "./arquivos/usuario.png",
         "pessoas": "8 pessoas",
-        "link": "strogonoff.html"
+        "link": "cocada"
     },
     {
         "receita": "Cupcake de banana com aveia",
         "imagem": "./arquivos/cupcake.jpg",
-        "descricao": "Estes bolinhos individuais são perfeitos para servir num lanchinho ou até mesmo para enviar na lancheira das crianças.",
+        "descricao": "Estes bolinhos individuais são perfeitos para enviar na lancheira das crianças.",
         "relogio": "https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png",
         "tempo": "45m",
         "serve": "./arquivos/usuario.png",
         "pessoas": "3 pessoas",
-        "link": "strogonoff.html"
+        "link": "cupcake"
     },
     {
         "receita": "Receita de Bolo de chocolate",
         "imagem": "./arquivos/bolo.jpg",
-        "descricao": "Bolo de chocolate super fácil de fazer, preparado à mão, que terá como cobertura uma mistura de creme de leite com chocolate.",
+        "descricao": "Bolo de chocolate super fácil de fazer, que terá como cobertura creme de leite com chocolate.",
         "relogio": "https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png",
         "tempo": "45m",
         "serve": "./arquivos/usuario.png",
         "pessoas": "8 pessoas",
-        "link": "strogonoff.html"
+        "link": "bolo"
     },
     {
         "receita": "Canjica branca",
@@ -57,17 +57,17 @@
         "tempo": "1h 30m",
         "serve": "./arquivos/usuario.png",
         "pessoas": "8 pessoas",
-        "link": "strogonoff.html"
+        "link": "canjica"
     },
     {
         "receita": "Milkshake de nutella",
         "imagem": "./arquivos/milkshake.jpg",
-        "descricao": "Este milkshake é perfeito para um dia quente de verão, uma sobremesa feita para satisfazer um desejo incontrolável por chocolate.",
+        "descricao": "Este milkshake é perfeito para um dia quente de verão.",
         "relogio": "https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png",
         "tempo": "10m",
         "serve": "./arquivos/usuario.png",
         "pessoas": "1 pessoa",
-        "link": "strogonoff.html"
+        "link": "milk"
     },
     {
         "receita": "Suco de manga com laranja",
@@ -77,6 +77,6 @@
         "tempo": "10m",
         "serve": "./arquivos/usuario.png",
         "pessoas": "1 pessoa",
-        "link": "strogonoff.html"
+        "link": "suco"
     }
 ]

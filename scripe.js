@@ -21,14 +21,13 @@ window.onload = function () {
     }
 
     function criarCardReceita(receita) {
-        const card = document.createElement("div");
-        card.classList.add("card");
-    
-        const link = document.createElement("a");
-        link.href = receita.link;
+        
+        const link = document.createElement("button");
+        link.id = receita.link;
+        link.setAttribute("onclick", "ViewexibirReceita(\""+receita.link+"\")");
     
         const img = document.createElement("img");
-        img.classList.add("capa");
+        img.classList.add("capa-mr");
         img.src = receita.imagem;
         img.alt = receita.receita;
     
@@ -54,19 +53,18 @@ window.onload = function () {
         const pessoas = document.createElement("label");
         pessoas.textContent = receita.pessoas;
     
-        const botao = document.createElement("button");
-        botao.id = "CREATEBOTAO"; // Altere "CREATEBOTAO" para o ID desejado
-        botao.textContent = "Curtir"; // Adicione o texto desejado ao botão
+        const botao = document.createElement("butto");
+        botao.id = "CREATEBOTAO"; 
+        botao.textContent = "Curtir"; 
     
-        // Adicione um evento de clique para chamar a função curtirReceita
         botao.addEventListener("click", function () {
             curtirReceita(receita.receita);
         });
     
         link.append(img, titulo, descricao, relogio, tempo, serve, pessoas, botao);
-        card.appendChild(link);
+
     
-        return card;
+        return link;
     }
 
     carregarReceitas(tipoSalgadas);
@@ -219,8 +217,7 @@ window.onload = function () {
             localStorage.setItem(MINHAS_RECEITAS_KEY, JSON.stringify(receitasCurtidas));
             alert('Receita curtida!');
 
-            // Adiciona a lógica adicional aqui, se necessário
-            // Você pode redirecionar para a página Minhas Receitas ou atualizar dinamicamente a lista de receitas curtidas na página
+           
         } else {
             alert('Você já curtiu esta receita!');
         }

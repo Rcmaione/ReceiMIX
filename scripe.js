@@ -52,7 +52,7 @@ window.onload = function () {
     
         const pessoas = document.createElement("label");
         pessoas.textContent = receita.pessoas;
-    
+        
         const botao = document.createElement("butto");
         botao.id = "CREATEBOTAO"; 
         botao.textContent = "Curtir"; 
@@ -175,17 +175,17 @@ window.onload = function () {
 
     // Verificar se o cookie de autenticação existe
     const logado = document.cookie.includes("userLoggedIn=true");
-
+    
     if (logado) {
         const minhasReceitasLink = document.createElement('a');
         minhasReceitasLink.href = 'MinhasReceitas.html';
-
+        
         const minhasReceitasText = document.createElement('p');
         minhasReceitasText.id = 'botaominhasreceitas';
         minhasReceitasText.textContent = 'Minhas Receitas';
-
+        
         minhasReceitasLink.appendChild(minhasReceitasText);
-
+        
         // Criar o elemento de "Sair"
         const sair = document.createElement('p');
         sair.id = 'botaosair';
@@ -206,13 +206,20 @@ window.onload = function () {
         const elementoARemover = document.getElementById("remover");
         if (elementoARemover) {
             elementoARemover.remove();
+            
         }
     }
     const MINHAS_RECEITAS_KEY = 'MinhasReceitas';
-
+    
     function curtirReceita(nomeReceita) {
+        const logado = document.cookie.includes("userLoggedIn=true");
+        if (!logado) {
+            // Se o usuário não estiver logado, redirecionar para a tela de login
+            window.location.href = 'login.html';
+            return;
+        }
         const receitasCurtidas = JSON.parse(localStorage.getItem(MINHAS_RECEITAS_KEY)) || [];
-
+        
         if (!receitasCurtidas.includes(nomeReceita)) {
             receitasCurtidas.push(nomeReceita);
             localStorage.setItem(MINHAS_RECEITAS_KEY, JSON.stringify(receitasCurtidas));

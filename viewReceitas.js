@@ -101,11 +101,11 @@ function viewmontarReceita(receita) {
 
 function viewaddcompartilhar(corpo) {
     const compartilhar = `<div class="compartilhar">
-    <p id="compartilhe">Compartilhe essa receita:</p>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https://rcmaione.github.io/animar/">
+    <p id="compartilhe">Compartilhe nosso site:</p>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://rcmaione.github.io/ReceiMIX/">
         <img width="25" height="25" src="https://ayltoninacio.com.br/img/s/18w50.jpg" alt="Compartilhe no Facebook">
     </a>
-    <a href="https://api.whatsapp.com/send?text=https://rcmaione.github.io/animar/">
+    <a href="https://api.whatsapp.com/send?text=https://rcmaione.github.io/ReceiMIX/">
         <img width="25" height="25" src="https://ayltoninacio.com.br/img/s/20w50.jpg" alt="Compartilhe no WhatsApp">
     </a>
     <a href="javascript:void(0)" onclick="share()">

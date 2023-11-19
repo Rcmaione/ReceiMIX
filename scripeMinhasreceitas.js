@@ -8,8 +8,9 @@ window.onload = function () {
         card.classList.add("card");
 
         const link = document.createElement("a");
-        link.href = receita.link;
-
+        link.addEventListener("click", function () {
+            ViewexibirReceita(receita.link);
+        });
         const img = document.createElement("img");
         img.classList.add("capa");
         img.src = receita.imagem;

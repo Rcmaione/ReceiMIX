@@ -28,7 +28,15 @@ body {
     position: absolute;
     display: flex;
 }
-
+#botaocalc{
+    width: 85px;
+    height: 35px;
+    margin-top: 3px;
+    border-radius: 8px;
+    padding: 5px;
+    border-style: hidden;
+    color: #ff6a28;
+}
 #botaominhasreceitas {
     width: 0%;
     color: #f0f0f0;
@@ -127,7 +135,7 @@ p {
     text-align: center;
     box-sizing: border-box;
     width: 350px;
-    height: 320px;
+    height: 345px;
     border-radius: 10px;
     box-shadow: 0 0 30px #a2a2a2;
     background-color: #f7f7f7;
@@ -195,6 +203,16 @@ label {
     padding: 5px;
     font-size: 1.0em;
 }
+.footer2 {
+    background-color: #ff6a28;
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 44px;
+    margin-top: 21%;
+
+}
+
 
 
   

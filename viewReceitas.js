@@ -10,14 +10,20 @@ class ReceitaModel {
 
 async function ViewexibirReceita(nome) {
     const corpo = document.getElementById("receitasView");
+
+    if (!corpo) {
+        console.error('Elemento com ID "receitasView" não encontrado.');
+        return;
+    }
     corpo.innerHTML = "";
     let div = document.createElement("div");
     div.setAttribute("id", "data-receita");
     corpo.appendChild(div);
     
     await buscaReceita(nome);
-    viewaddcompartilhar(corpo)
+    viewaddcompartilhar(corpo);
     viewaddComplementos(corpo);
+    
 
 }
 

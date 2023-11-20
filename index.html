@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReceiMIX - Receitas</title>
+    <link rel="icon" href="./arquivos/f1-removebg-preview.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./arquivos/f1-removebg-preview.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
@@ -46,16 +48,24 @@
                 <input type="radio" name="radiobt" id="radio4">
 
                 <div class="slide first">
-                    <a href="strogonoff.html"><img src="arquivos/strogonoff.jpeg" alt="Imagem 1"></a>
+                    <label for="radio1" onclick="ViewexibirReceita('strogonoff')">
+                        <img src="arquivos/strogonoff.jpeg" alt="Imagem 1">
+                    </label>
                 </div>
                 <div class="slide">
-                    <a href="macarronada.html"><img src="arquivos/macarronada_de_calabresa.jpg" alt="Imagem 2"></a>
+                    <label for="radio2" onclick="ViewexibirReceita('macarronada')">
+                        <img src="arquivos/macarronada_de_calabresa.jpg" alt="Imagem 2">
+                    </label>
                 </div>
                 <div class="slide">
-                    <a href="farofa.html"><img src="arquivos/farofa.jpg" alt="Imagem 3"></a>
+                    <label for="radio3" onclick="ViewexibirReceita('avela')">
+                        <img src="arquivos/nutella.jpg" alt="Imagem 3">
+                    </label>
                 </div>
                 <div class="slide">
-                    <a href="empada.html"><img src="arquivos/empadinha.jpg" alt="Imagem 4"></a>
+                    <label for="radio4" onclick="ViewexibirReceita('tortinha')">
+                        <img src="arquivos/tortinha.jpg" alt="Imagem 4">
+                    </label>
                 </div>
             
                 <div class="navigation">
@@ -85,7 +95,7 @@
     </section>
     <footer>
         <div>
-            <p id="footernames">Copyright<sup>&copy</sup> - <a href="homepage.html" class="link-footer">ReceiMIX</a> 2023 - Projeto para fins didáticos</p>
+            <p id="footernames">Copyright<sup>&copy</sup> - <a href="index.html" class="link-footer">ReceiMIX</a> 2023 - Projeto para fins didáticos</p>
                 <div class="compartilhar">
                 <p id="compartilhe">Compartilhe:</p>
                 <a href="https://www.facebook.com/sharer/sharer.php?u=https://rcmaione.github.io/ReceiMIX/">

@@ -1,8 +1,11 @@
+// Função executada quando a janela é carregada
 window.onload = function () {
+    // Selecionar elementos do HTML
     const tipoSalgadas = document.querySelector("#receitas-salgadas");
     const tipoDoces = document.querySelector("#receitas-doces");
 
     function carregarReceitas(tipo) {
+        // Carregar receitas com base no tipo (salgadas ou doces)
         const localURL = tipo === tipoSalgadas ? 'receitas.json' : 'receitasdoces.json';
 
         fetch(localURL)
@@ -14,6 +17,7 @@ window.onload = function () {
     }
 
     function criarCardsReceitas(receitas, container) {
+        // Pegar cards de receitas e adicioná-los ao container
         receitas.forEach(receita => {
             const card = criarCardReceita(receita);
             container.appendChild(card);
@@ -21,7 +25,7 @@ window.onload = function () {
     }
 
     function criarCardReceita(receita) {
-        
+         // Criar card de uma receita
         const link = document.createElement("button");
         link.id = receita.link;
         link.setAttribute("onclick", "ViewexibirReceita(\""+receita.link+"\")");
@@ -66,13 +70,13 @@ window.onload = function () {
     
         return link;
     }
-
+    // Inicializar carregamento de receitas para ambos os tipos
     carregarReceitas(tipoSalgadas);
     carregarReceitas(tipoDoces);
 
+    // Configurar slider de imagens
     let count = 1;
     document.getElementById("radio1").checked = true;
-
     const intervalId = setInterval(nextImage, 4000);
 
     function nextImage() {
@@ -83,6 +87,7 @@ window.onload = function () {
         document.getElementById("radio" + count).checked = true;
     }
 
+    // Lidar com pesquisa de receitas
     const inputSearch = document.getElementById("search");
     const content = document.querySelector(".cont1");
     const content2 = document.querySelector(".cont2");
@@ -90,6 +95,7 @@ window.onload = function () {
     const h1_1 = document.querySelector(".tipo-rec2");
     const items = [];
 
+    // Função para lidar com a pesquisa
     function handleSearch(event) {
         const slide = document.querySelector(".slider");
 
@@ -111,7 +117,7 @@ window.onload = function () {
             }
         }
     }
-
+    //Cria card para ser mostrado ao pesquisar
     function addHTML(item) {
         const div = document.createElement("div");
         div.classList.add("card");
@@ -152,6 +158,8 @@ window.onload = function () {
         div.appendChild(link);
         content.appendChild(div);
     }
+
+    // Buscar receitas para pesquisa
     function buscarReceitas(tipo) {
         const localURL = tipo === tipoSalgadas ? 'receitas.json' : 'receitasdoces.json';
         fetch(localURL)
@@ -163,16 +171,16 @@ window.onload = function () {
             })
             .catch(error => console.error('Erro ao carregar receitas para pesquisa:', error));
     }
-
+    // Inicializar busca de receitas para ambos os tipos
     buscarReceitas(tipoSalgadas);
     buscarReceitas(tipoDoces);
-
+    // Lidar com evento de input na barra de pesquisa
     inputSearch.addEventListener('input', handleSearch);
-
+    // Limpar intervalo quando a página é fechada ou atualizada
     window.onunload = function () {
         clearInterval(intervalId);
     }
-
+    // Verificar se o usuário está logado e ajustar o header
     // Verificar se o cookie de autenticação existe
     const logado = document.cookie.includes("userLoggedIn=true");
     

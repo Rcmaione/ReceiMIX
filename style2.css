@@ -109,7 +109,7 @@ label {
 #logo1 {
     width: 80px;
     margin-left: 15px;
-    margin-top: -117px;
+    margin-top: -116px;
 }
 
 #search {
@@ -331,5 +331,13 @@ label {
     .manual,
     .navigation {
         width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .calculadora,
+    .fixed-element {
+        width: 100%; /* Faz ambos ocuparem 100% da largura na tela pequena */
+        display: block; /* Certifique-se de que eles são exibidos como blocos */
+        margin-left: 0; /* Remove a margem à esquerda */
     }
 }

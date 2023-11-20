@@ -4,27 +4,40 @@
 }
 
 body {
-    background-color: #ececec;
+    margin: 0;
+    padding: 0;
 }
 
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 
 
 #botaologin {
     font-family: 'Lato', sans-serif;
-    margin-top: -12px;
     color: white;
+    display: flex;
+    position: absolute;
+    top: 45px;
+    padding-left: 8px;
 }
 #minhasreceitas{
-    margin-top: 5px;
-    margin-left: -60px;
+    left: 88%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    display: flex;
+    top: -0.5em;
 }
+
 #botaosair {
     width: 0%;
     color: rgb(255, 230, 0);
     font-size: 1.1em;
     font-weight: 700;
-    left: 95%;
-    top: 0.5em;
+    left: 4.5em;
+    top: 0.7em;
     position: absolute;
     display: flex;
 }
@@ -43,9 +56,7 @@ body {
     font-size: 1.1em;
     font-weight: 700;
     position: absolute;
-    left: 87%;
-    display: flex;
-    top:-3px;
+    left: 88%;
 }
 
 h1 {
@@ -65,7 +76,7 @@ h1 {
 
 .header {
     background-color: #ff6a28;
-    height: 55px;
+    height: 70px;
     padding-top: 15px;
     display: inherit;
 }
@@ -121,8 +132,9 @@ label {
     justify-content: space-around;
    
 }
-
-
+.h3, h3 {
+    font-size: calc(1.3rem + .6vw);
+}
 .card h3 {
     margin-top: 8px;
 }
@@ -203,27 +215,22 @@ label {
     padding: 5px;
     font-size: 1.0em;
 }
-.footer2 {
-    background-color: #ff6a28;
-    height: 25px;
-    color: white;
-    text-align: center;
-    padding-top: 34px;
-    margin-top: 21%;
-
-}
-
 
 
   
-
 @media only screen and (max-width: 768px) {
-    /* Estilos específicos para telas menores que 768px */
  
-
     .slider,
     .manual,
     .navigation {
         width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .calculadora,
+    .fixed-element {
+        width: 100%; /* Faz ambos ocuparem 100% da largura na tela pequena */
+        display: block; /* Certifique-se de que eles são exibidos como blocos */
+        margin-left: 0; /* Remove a margem à esquerda */
     }
 }

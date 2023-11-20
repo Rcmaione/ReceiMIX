@@ -60,23 +60,23 @@
         "link": "canjica"
     },
     {
-        "receita": "Milkshake de nutella",
-        "imagem": "./arquivos/milkshake.jpg",
-        "descricao": "Este milkshake é perfeito para um dia quente de verão.",
+        "receita": "Creme de Avelã",
+        "imagem": "./arquivos/nutella.jpg",
+        "descricao": "Todos amam esse creme de avelã com leve toque de cacau! Ele é cremoso e saboroso.",
         "relogio": "https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png",
-        "tempo": "10m",
+        "tempo": "30m",
         "serve": "./arquivos/usuario.png",
-        "pessoas": "1 pessoa",
-        "link": "milk"
+        "pessoas": "4 pessoas",
+        "link": "avela"
     },
     {
-        "receita": "Suco de manga com laranja",
-        "imagem": "./arquivos/suco.jpg",
-        "descricao": "Uma combinação de sabores que vai despertar seus sentidos e refrescar sua sede.",
+        "receita": "Torta de Limão",
+        "imagem": "./arquivos/tortinha.jpg",
+        "descricao": "Com sabor cítrico e adocicado, essas tortinhas farão muito sucesso!",
         "relogio": "https://www.imagensempng.com.br/wp-content/uploads/2021/10/811.png",
-        "tempo": "10m",
+        "tempo": "1h 30m",
         "serve": "./arquivos/usuario.png",
-        "pessoas": "1 pessoa",
-        "link": "suco"
+        "pessoas": "4 pessoas",
+        "link": "tortinha"
     }
 ]

@@ -1,6 +1,9 @@
+// Aguarda o DOM ser completamente carregado antes de executar o código
 document.addEventListener('DOMContentLoaded', function () {
+    // Seleciona o elemento container no HTML
     const container = document.querySelector("#conteudo");
 
+    // Função para carregar as receitas a partir de um arquivo JSON
     function carregarReceitas() {
         fetch('receitas_individuais.json')
             .then(response => response.json())
@@ -8,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .catch(error => console.error('Erro ao carregar receitas:', error));
     }
 
+    // Função para exibir as receitas na página
     function exibirReceitas(receitas) {
         receitas.forEach(receita => {
             const card = criarCardReceita(receita);
@@ -15,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Função para criar um card de receita com título, ingredientes e modo de preparo
     function criarCardReceita(receita) {
         const card = document.createElement("div");
         card.classList.add("conteudo");
@@ -33,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return card;
     }
 
+    // Função para criar um card de ingredientes
     function criarCardIngredientes(ingredientes) {
         const card = document.createElement("div");
         card.classList.add("carde");
@@ -53,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return card;
     }
 
+    // Função para criar um card de modo de preparo
     function criarCardModoPreparo(modoPreparo) {
         const card = document.createElement("div");
         card.classList.add("carde");
@@ -67,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
             listaModoPreparo.appendChild(item);
         });
 
+        // Botão para adicionar a receita às minhas receitas
         const botaoAdicionar = document.createElement("a");
         botaoAdicionar.href = "#";
         botaoAdicionar.classList.add("botao");
@@ -79,5 +87,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return card;
     }
 
+    // Chama a função para carregar as receitas ao carregar a página
     carregarReceitas();
 });

@@ -1,8 +1,11 @@
+// Função executada quando a janela é carregada
 window.onload = function () {
+    // Selecionar elementos do HTML
     const tipoSalgadas = document.querySelector("#receitas-salgadas");
     const tipoDoces = document.querySelector("#receitas-doces");
     const minhasReceitasContainer = document.getElementById('minhas-receitas-container');
 
+    // Criar card de uma receita para ser exibido nas receitas curtidas
     function criarCardReceita(receita) {
         const card = document.createElement("div");
         card.classList.add("card");
@@ -29,7 +32,7 @@ window.onload = function () {
 
         return card;
     }
-
+    // Função para curtir uma receita
     function curtirReceita(nomeReceita) {
         const receitasCurtidas = JSON.parse(localStorage.getItem('MinhasReceitas')) || [];
         
@@ -42,6 +45,7 @@ window.onload = function () {
             alert('Você já curtiu esta receita!');
         }
     }
+    // Verificar se o usuário está logado e ajustar o header
     const logado = document.cookie.includes("userLoggedIn=true");
 
     if (logado) {
@@ -75,7 +79,8 @@ window.onload = function () {
         if (elementoARemover) {
             elementoARemover.remove();
         }
-    }
+    }  
+    // Exibir as receitas curtidas ao carregar a página
     function exibirMinhasReceitas() {
         minhasReceitasContainer.innerHTML = ""; // Limpa o conteúdo atual
     
@@ -88,7 +93,7 @@ window.onload = function () {
             }
         });
     }
-    
+    // Criar um card para uma receita curtida com base no nome
     async function criarCardMinhaReceita(nomeReceita) {
         const receitaSalgada = await obterDetalhesReceita(nomeReceita, tipoSalgadas);
         const receitaDoce = await obterDetalhesReceita(nomeReceita, tipoDoces);

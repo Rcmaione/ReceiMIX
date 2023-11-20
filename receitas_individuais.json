@@ -366,45 +366,48 @@
         ] 
     },
     {
-        "nome": "milk",
-        "titulo": "Milkshake de nutella",
-        "imagem": "./arquivos/milkshake.jpg",
+        "nome": "avela",
+        "imagem": "./arquivos/nutella.jpg",
+        "titulo": "Creme de Avelã",
         "ingredientes": [
-            "2 bolas de sorvete de flocos",
-            "½ xícara de leite (120 mililitros)",
-            "4 colheres de sopa de Nutella",
-            "2 colheres de sopa de Nutella",
-            "1 xícara de chantilly batido"
-
+          "200 gramas de avelãs",
+          "¼ xícara de cacau em pó",
+          "½ xícara de açúcar mascavo",
+          "½ xícara de água (temperatura ambiente)",
+          "50 gramas de chocolate ao leite derretido",
+          "1 pitada de sal"
         ],
         "modoPreparo": [
-            "Passe as 2 colheres de sopa de Nutella na borda e dentro do copo.",
-            "Em um liquidificador ou processador, coloque as bolas de sorvete, o leite e as 4 colheres de sopa de Nutella e bata bem.",
-            "Coloque o milkshake no copo.",
-            "Finalize com o chantilly.",
-            "Aqui eu finalizei com canudinhos de chocolate, você pode colocar canudinho de doce de leite também.",
-            "Aproveite o seu delicioso Milkshake de Nutella!"
-        ] 
-    },
+          "Pré-aqueça o forno a 180°C.",
+          "Espalhe as avelãs em uma assadeira e leve ao forno por cerca de 10 minutos, mexendo ocasionalmente, até que as avelãs fiquem levemente douradas e liberem seu aroma.",
+          "Remova as avelãs do forno e deixe esfriar um pouco. Em seguida, esfregue as avelãs em um pano para remover as cascas o máximo possível.",
+          "No processador de alimentos, triture as avelãs até formar uma pasta cremosa.",
+          "Adicione o cacau em pó, açúcar mascavo, água, chocolate ao leite derretido e uma pitada de sal à pasta de avelãs no processador.",
+          "Processe novamente até obter um creme suave e homogêneo.",
+          "Transfira o creme de avelã para um recipiente e armazene na geladeira. Pode ser utilizado como um delicioso creme para passar no pão, bolos, entre outros."
+        ]
+      },
     {
-        "nome": "suco",
-        "titulo": "Suco de manga com laranja",
-        "imagem": "./arquivos/suco.jpg",
+        "nome": "tortinha",
+        "imagem": "./arquivos/tortinha.jpg",
+        "titulo": "Torta de Limão",
         "ingredientes": [
-            "1 manga",
-            "1 laranja",
-            "150 mililitros de leite",
-            "20 gramas de açúcar (opcional)"
+          "2 xícaras de farinha de trigo (aproximadamente)",
+          "6 colheres de sopa de manteiga gelada",
+          "1 ovo",
+          "2 colheres de sopa de açúcar",
+          "1 lata de leite condensado",
+          "1 caixa de creme de leite",
+          "120 mililitros de suco de limão",
+          "raspas de casca de limão (a gosto)"
         ],
         "modoPreparo": [
-            "Descasque e pique a manga.",
-            "Coloque metade do leite e bata no liquidificador ou mixer.",
-            "Esprema a laranja e adicione o suco extraído à mistura.",
-            "Adicione o açúcar e o leite restante.",
-            "Misture bem para obter o suco de manga com laranja.",
-            "Se estiver muito grosso, adicione mais leite ou água para ajustar a consistência.",
-            "Sirva e desfrute deste delicioso suco natural, rico em vitamina C e perfeito para começar o dia com energia."
-        ] 
-    }
+          "Misture a farinha de trigo, a manteiga gelada, o ovo e o açúcar até formar uma massa.",
+          "Forre uma forma de torta com a massa e leve ao forno preaquecido a 180°C por cerca de 15 minutos, ou até dourar levemente.",
+          "Enquanto a massa assa, prepare o recheio: misture o leite condensado, o creme de leite, o suco de limão e as raspas de casca de limão.",
+          "Despeje o recheio sobre a massa já assada e leve à geladeira por pelo menos 4 horas para firmar.",
+          "Sirva gelada e aproveite!"
+        ]
+      }
       
 ]

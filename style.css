@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
+    font-family: 'Lato', sans-serif;
 }
 
 button:hover {
@@ -9,11 +11,6 @@ button:hover {
 
 a {
     text-decoration: none;
-}
-
-body {
-    background-color: #f0f0f0;
-    font-family: 'Lato', sans-serif;
 }
 
 .botao {
@@ -64,13 +61,11 @@ body {
 .fixed-element {
     width: 23%;
     background-color: #f0f0f0;
-    padding: 0px;
-    margin-left: 2%;
-    margin-bottom: 18%;
     display: flex;
-    margin-top: -952px;
+    position: absolute;
+    top: 67%;
+    border-radius: 10px;
 }
-
 
 .compartilhar {
     margin-top: -17px;
@@ -99,11 +94,14 @@ ul {
 }
 
 #compartilhe {
+    width: 93px;
+    right: 16%;
+    position: fixed;
     font-family: 'Lato', sans-serif;
-    margin-top: 1px;
-    margin-left: -105%;
-    color: #f95c18;
-    
+    color: #ff6a28;
+    bottom: -5px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
 }
 
 #colheres {
@@ -120,6 +118,27 @@ footer {
     text-align: center;
     padding-top: 36px;
 
+}
+#imgshare1 {
+    left: 85%;
+    bottom: 9px;
+    width: 25px;
+    height: 25px;
+    position: fixed;
+}
+#imgshare2 { 
+    left: 88%;
+    bottom: 9px; 
+    width: 25px;
+    height: 25px;
+    position: fixed;
+}
+#imgshare3 { 
+    left: 91%;
+    bottom: 9px;
+    width: 25px;
+    height: 25px;
+    position: fixed; 
 }
 
 #footernames {

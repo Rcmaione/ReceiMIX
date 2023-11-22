@@ -152,7 +152,11 @@ p {
     box-shadow: 0 0 30px #a2a2a2;
     background-color: #f7f7f7;
     border: hidden;    
+    transition: transform 0.3s ease-in-out;   
     
+}
+.card:hover {
+    transform: translateY(-10px);
 }
 .capa {
     border-top-left-radius: 10px;
@@ -166,6 +170,10 @@ p {
     width: 350px;
     height: 219px;
     margin-top: -16.7%;
+    transition: transform 0.3s ease-in-out;
+}
+.capa-mr:hover {
+    transform: translateY(-10px);
 }
 button{
     margin: 10px; 
@@ -176,7 +184,11 @@ button{
     border-radius: 10px;
     box-shadow: 0 0 30px #a2a2a2;
     background-color: #f7f7f7;
-    border: hidden;    
+    border: hidden;
+    transition: transform 0.3s ease-in-out;   
+}
+button:hover {
+    transform: translateY(-10px);
 }
 .nome-receita {
     color: #e57c3a;

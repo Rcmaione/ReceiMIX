@@ -193,11 +193,71 @@ ul {
     margin-top: 3px;
 }
 
-@media screen and (max-width: 600px) {
-    .calculadora,
+@media screen and (max-width: 945px) {
+    .slider,.manual,.navigation {
+        width: 100%;
+    }
     .fixed-element {
         width: 100%; /* Faz ambos ocuparem 100% da largura na tela pequena */
         display: block; /* Certifique-se de que eles são exibidos como blocos */
         margin-left: 0; /* Remove a margem à esquerda */
     }
+    .calculadora,#inputsearch,#imgshare1, #imgshare2{
+        display: none;
+    }
+    #minhasreceitas {
+        left: 77%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        position: absolute;
+        display: flex;
+        top: 0.5em;
+    }
+    #central {
+        width: 100%;
+        margin-top: -4px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 33px;
+        color: #f0f0f0;
+    }
+    #compartilhe {
+        width: 93px;
+        right: 16%;
+        position: fixed;
+        font-family: 'Lato', sans-serif;
+        color: #ff6a28;
+        bottom: 9px;
+        background-color: #f0f0f0;
+        border-radius: 6px;
+    }
+ 
+   
+    #imgshare3 { 
+        left: 87%;
+        bottom: 23px;
+        width: 25px;
+        height: 25px;
+        position: fixed; 
+    }
+
+}
+@media screen and (max-width: 500px) {
+#data-receita-modoPreparo, #data-receita-ingredientes {
+    width: 100%;
+    margin: auto;
+    padding: 33px;
+    background-color: white;
+    margin: 15px auto;
+    border-radius: 5px;
+    font-weight: 300;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: 'Lato', sans-serif;
+    width: 110%;
+}
 }

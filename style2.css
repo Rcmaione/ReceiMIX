@@ -347,6 +347,21 @@ label {
     .calculadora,#inputsearch,#imgshare1, #imgshare2{
         display: none;
     }
+    #login {
+        width: 50px;
+        position: absolute;
+        top: 1px;
+        left: 90%;
+    }
+    #botaologin {
+        font-family: 'Lato', sans-serif;
+        color: white;
+        display: flex;
+        position: absolute;
+        top: 45px;
+        padding-left: 8px;
+        left: 90%;
+    }
     #minhasreceitas {
         left: 77%;
         display: flex;
@@ -403,3 +418,12 @@ body {
     width: 110%;
 }
 }
+@media screen and (max-width: 500px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        font-family: 'Lato', sans-serif;
+        width: 115%;
+    }
+    }

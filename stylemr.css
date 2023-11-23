@@ -185,7 +185,8 @@ button{
     box-shadow: 0 0 30px #a2a2a2;
     background-color: #f7f7f7;
     border: hidden;
-    transition: transform 0.3s ease-in-out;   
+    transition: transform 0.3s ease-in-out; 
+    padding: 0px; 
 }
 button:hover {
     transform: translateY(-10px);
